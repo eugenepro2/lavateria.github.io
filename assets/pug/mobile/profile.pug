@@ -1,0 +1,34 @@
+.page(data-page='profile').profile
+	.page-content
+		.breadcrumb
+			h2 Личный кабинет
+		.container
+			.row
+				.col-xs-12
+					.profile__block.profile__block--wellcome
+						a(href="profile-personal.html")
+							h3 Мы рады Вам, Иван
+							img.edit(src="img/edit.svg", alt="")
+						hr
+					.profile__block
+						a(href="profile-order.html")
+							h3 Заказы
+							span посмотреть все
+							img(src="img/next.svg", alt="")
+						a(href="profile-info-3.html").profile__block__order.active
+							h4 №201032  Абонемент
+							p в работе с 20.08.2017 по 20.10.2017
+						a(href="profile-info-2.html").profile__block__order
+							h4 №201032  Белье
+							p от 20.08.2017 завершен 20.10.2017
+					.profile__block
+						hr
+						a.profile-contact(href="#")
+							h3 Обратная связь
+							img(src="img/next.svg", alt="")
+						hr
+					.profile__block
+						a(href="index.html")
+							h3 Сделать заказ
+							img(src="img/next.svg", alt="")
+						hr

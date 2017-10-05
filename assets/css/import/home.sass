@@ -1,0 +1,381 @@
+@import "color.sass" 
+
+//Услуги
+.services
+	padding-top: 71px
+	.col-sm-6:nth-of-type(odd)
+		.services__block__block
+			text-align: left
+			padding-left: 45px
+	.col-sm-6:nth-of-type(even)
+		.services__block__block
+			text-align: right
+			padding-right: 30px
+	&__block
+		height: 230px
+		margin-bottom: 15px
+		background-size: cover
+		background-repeat: no-repeat
+		flex-direction: column
+		position: relative
+		color: $white
+		text-decoration: none
+		background-size: 110%
+		transition: background-size 0.3s
+		&:hover
+			background-size: 120%
+		&:hover .services__block__hover
+			background: rgba(1, 179, 253, 0.5)
+		h3, .btn
+			position: relative
+			z-index: 10
+		h3
+			font-size: 24px
+			letter-spacing: 1.2px
+			font-weight: 400
+			color: $white
+			margin-bottom: 23px
+			text-transform: uppercase
+		.btn
+		&__hover
+			background: rgba(56, 56, 56, 0.25)
+			transition: background 0.3s
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+
+//Абонементное обслуживание  						
+.subscription
+	&__row
+		margin-bottom: 33px
+	padding-top: 55px
+	&__block
+		margin-top: 17px
+		position: relative
+		width: 455px
+		box-sizing: border-box
+		box-shadow: 0 0 41px 9px rgba(153, 153, 153, 0.15)
+		&__header
+			height: 85px
+			background: #000
+			color: $white
+			h2
+				font-size: 20px
+				font-weight: 600
+				line-height: 1.2
+				letter-spacing: 2px
+				text-align: center
+				color: $white
+				text-transform: uppercase
+		&__content
+			padding: 45px
+			h4
+				font-size: 14px
+				padding-left: 27px
+				margin-bottom: 11px
+				color: $warm-grey
+			ul
+				margin-top: 28px
+				position: relative
+				padding-left: 30px
+				li:before
+					content: "\e905"
+					font-family: icomoon
+					position: absolute
+					left: 0px
+					color: #000
+				li
+					line-height: 19px
+					margin-bottom: 20px
+					font-size: 16px
+		&__total
+			h3
+				font-size: 36px
+				font-weight: 600
+				span
+					font-size: 36px
+					font-weight: 600
+					color: $black-two
+			i
+				font-size: 17px
+				padding: 0 5px
+			span
+				font-size: 14px
+				color: $warm-grey
+				font-weight: 400
+				top: 7px
+				i
+					font-size: 11px
+					padding: 0 2px
+	&__block--blue
+		&:before
+			position: absolute
+			background: url('/img/wave-blue.png') no-repeat
+			content: ''
+			width: 100%
+			background-size: 100%
+			height: 100%
+			bottom: -85px
+			left: 0px
+		.subscription__block
+			&__header
+				background: $blue
+			&__content ul li:before
+				color: $blue
+	&__block--green
+		position: relative
+		left: -11px
+		&:before
+			position: absolute
+			background: url('/img/wave-green.png') no-repeat
+			content: ''
+			width: 100%
+			background-size: 100%
+			height: 100%
+			bottom: -85px
+			left: 0px
+		.subscription
+			&__block
+				&__header
+					background: $green
+				&__content ul 
+					li span
+						color: $green
+						font-weight: 600
+					li:before
+						color: $green
+	&__basket
+		position: relative
+		height: 612px
+		&__block
+			width: 200px
+			position: absolute
+			right: 135px
+			text-align: left
+			top: 48%
+			z-index: 10
+			transform: translateY(-50%)
+			h2
+				font-family: 'Ubuntu'
+				font-size: 24px
+				color: $blue
+				text-transform: uppercase
+				margin-bottom: 15px
+				line-height: 29px
+			p
+				font-size: 24px
+				color: $black-three
+				font-family: 'Segoe UI'
+				line-height: 29px
+		&__basket
+			position: absolute
+			left: 25px
+			top: 53%
+			transform: translateY(-50%)
+		&__arrow
+			z-index: 10
+			width: 545px
+			position: absolute
+			left: 88px
+			top: 45px
+			transform: rotate(14deg)
+	&__clothes
+		position: relative
+		height: 500px
+		top: -30px
+		&__block
+			width: 230px
+			position: absolute
+			left: 105px
+			text-align: left
+			top: 58%
+			z-index: 10
+			transform: translateY(-50%)
+			h2
+				font-family: 'Ubuntu'
+				font-size: 24px
+				color: $green
+				text-transform: uppercase
+				margin-bottom: 20px
+				line-height: 29px
+			p
+				font-size: 24px
+				color: $black-three
+				font-family: 'Segoe UI'
+				line-height: 29px
+				width: 205px
+		&__clothes
+			position: absolute
+			right: 10px
+			top: 65%
+			transform: translateY(-50%)
+		&__arrow
+			z-index: 10
+			width: 545px
+			position: absolute
+			left: -1px
+			top: 25px
+			transform: rotate(-14deg)
+
+
+//Как это работает?
+.how-it-works
+	padding-bottom: 100px
+	margin-top: 29px
+	padding-top: 50px
+	background: rgba(204, 204, 204, 0.2)
+	position: relative
+	.heading
+		span
+			display: block
+			font-size: 20px
+			margin-bottom: 10px
+	&__block
+		flex-direction: column
+		display: flex
+		&__icon
+			height: 190px
+			img
+				width: 170px
+				height: 170px
+		.second
+			img
+				width: 180px
+				height: 180px
+		.fourth
+			img
+				width: 190px
+				height: 190px
+		h3
+			font-size: 18px
+			font-weight: 600
+			margin-top: 40px
+		p
+			margin-top: 25px
+			font-size: 14px
+			color: $grey-two
+
+//Отзывы
+.review
+	&:before
+		content: ''
+		background: url('/img/wave-white-reverse.png') no-repeat
+		width: 100%
+		height: 18px
+		display: block
+		position: absolute
+		background-size: 100% auto
+		z-index: 10
+		top: -11px
+	position: relative
+	padding-top: 73px
+	padding-bottom: 90px
+	.heading h2
+		line-height: 37px
+	.review__img
+		position: absolute
+		width: 700px
+		height: 800px
+		z-index: 20
+	&__img--1
+		background: url('/img/iron-bg.png') no-repeat
+		top: -291px
+		left: -110px
+	&__img--2
+		background: url('/img/clothes-bg.png') no-repeat
+		right: -110px
+		width: 580px
+		top: -120px
+		@media (max-width: 1350px)
+			right: -200px
+	&__block
+		padding: 38px 167px 0px
+		&__right
+			position: relative
+			right: 18px
+		&__name
+			font-size: 18px
+			margin-bottom: 22px
+		&__date
+			color: $warm-grey
+			font-size: 14px
+		&__title
+			font-size: 18px
+			font-weight: 600
+			margin-bottom: 17px
+		&__star
+			i
+				font-size: 19px
+				margin-right: 5px
+			p
+				color: $blue
+				font-size: 14px
+				position: relative
+				left: 7px
+				bottom: 2px
+				display: inline-block
+		&__text
+			margin-top: 20px
+			line-height: 1.5
+			font-size: 16px
+		&__comment
+			margin-top: 26px
+			line-height: 1.5
+			span
+				color: $blue
+		hr
+			margin-top: 36px
+			border: none
+			border-top: solid 1px $white-three
+
+
+//Faq
+.faq
+	&:before
+		content: ''
+		background: url('/img/wave-white.png') no-repeat
+		width: 100%
+		height: 20px
+		display: block
+		background-size: 100% auto
+		position: absolute
+		z-index: 10
+		top: 0px
+	position: relative
+	background: rgba(204, 204, 204, 0.2)
+	padding-top: 50px
+	padding-bottom: 90px
+	.heading
+		margin-bottom: 50px	
+	&__block
+		padding: 0 55px
+		&__heading
+			margin-bottom: 23px
+			padding: 0 55px
+			position: relative
+			z-index: 20
+			h2 
+				font-size: 18px
+				font-weight: bold
+			i
+				font-size: 7px
+				color: $green
+		&__title
+			font-size: 15px
+			line-height: 18px
+			transition: color 0.3s
+			&--green
+				color: $green
+				transition: color 0.3s
+		&__answer
+			margin-top: 30px
+			font-style: italic
+			font-family: 'Ubuntu'
+			font-size: 16px
+			color: $grey-two
+			p
+				line-height: 20px
+				margin-bottom: 19px
+

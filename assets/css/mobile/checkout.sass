@@ -1,0 +1,217 @@
+@import "../import/color.sass"  
+
+//Оформление заказа
+.checkout
+	.hidden
+		.checkout__item 
+			img, svg
+				display: block
+				transform: rotate(0deg)
+				transition: all 0.3s
+		hr
+			display: block
+	&__step
+		margin-top: 0
+		&__block
+			h2
+				font-size: 36px
+				font-weight: 600
+		#date
+			display: block
+			height: 92px !important
+			border: 1px solid $white-three
+		hr
+			display: none
+		&--4
+			.checkbox
+				margin: 0
+				margin-top: 40px
+				&__block
+					width: 37px
+					height: 37px
+				.label
+					width: 37px
+					height: 37px
+					&:after
+						width: 23px
+						height: 10px
+						top: 5px
+						left: 2px
+						border-color: $warm-grey !important
+				.label-for
+					font-size: 24px
+					margin-left: 51px
+					color: $warm-grey !important
+					top: -40px
+					a
+						text-decoration: underline
+		&--2, &--3, &--4
+			label
+				font-size: 36px
+			input, textarea
+				width: 100% !important
+				font-size: 30px
+				border-radius: 40px
+				padding: 25px 40px
+				height: 100%
+				margin-bottom: 30px
+			p.required
+				color: $warm-grey
+				font-size: 30px !important
+		&__payment
+			label
+				background: $white-two
+				border-radius: 5px
+				padding: 20px 35px
+				h3
+					font-size: 30px
+					line-height: 1
+					font-weight: 600
+				p
+					font-size: 24px
+					line-height: 1
+					color: $black-two
+				img
+					width: 80px
+					margin-right: 20px
+			input
+				display: none
+				&:checked + label
+					background: $blue
+					h3, p
+						color: $white
+	&__item
+		&.active
+			svg path
+				fill: $blue
+		&--1
+			margin-top: 40px
+			margin-bottom: 30px
+		&--3
+			h3
+				margin-bottom: 0 !important
+			a
+				padding-top: 20px
+		&--4
+			h3
+				margin-bottom: 30px !important
+		&__account
+			font-size: 30px
+			text-decoration: underline
+			margin-left: 80px
+			padding-top: 20px
+			display: block
+			margin-bottom: 50px
+			color: $warm-grey
+		span
+			top: 5px
+			width: 50px
+			height: 50px
+			font-size: 30px
+			padding: 3px 0
+			text-align: center
+		h3
+			font-size: 36px
+			margin-top: 0
+			margin-left: 30px
+			margin-bottom: 0px
+			font-weight: 600
+		img, svg
+			width: 42px
+			position: absolute
+			right: 0
+			top: 10px
+			transition: all 0.3s
+			transform: rotate(180deg)
+			path
+				fill: $warm-grey
+	&__sum
+		width: 100%
+		line-height: 0
+		display: block
+		text-decoration: none
+		color: $white
+		background: $blue
+		padding: 40px
+		text-align: center
+		font-size: 36px
+		font-weight: 600
+		letter-spacing: 1.8px
+		box-sizing: border-box
+		i
+			font-size: 27px
+			padding: 0 10px
+	&-ready
+		hr
+			margin: 20px 0
+			border: none
+			border-top: solid 1px #d0d0d0
+	&__ready
+		&__number-order
+			font-size: 36px
+			font-weight: 400
+			margin-top: 10px
+		&__name
+			h4
+				font-size: 30px
+				font-weight: 400
+				margin: 0
+			&--total
+				h4
+					font-weight: 600
+		&__count
+			span
+				font-size: 30px
+				font-weight: 600
+		&__sum
+			span 
+				font-size: 30px
+				font-weight: 600
+			i
+				font-size: 21px
+		&__more
+			h5, p
+				font-size: 30px
+			h5
+				font-weight: 400
+				margin-bottom: 0
+			p
+				margin-top: 0
+				font-weight: 600
+		&__sale
+			height: 860px
+			background: url('/img/checkout-sale-mobile.png') no-repeat
+			background-size: cover
+			h2
+				margin-top: 260px
+				font-size: 30px
+				font-weight: 400
+				span
+					font-size: 36px
+			h3
+				font-size: 76px
+				font-weight: normal
+				top: -85px
+				left: 87px
+				margin-bottom: 0
+				span
+					font-weight: bold
+					font-size: 46px
+					top: -20px
+					position: relative
+			img
+				top: inherit
+				bottom: 257px
+				left: 220px
+				width: 260px
+				transform: rotate(-15deg)
+			.btn
+				width: 285px
+				border-radius: 35px
+				text-align: center
+				i
+					font-size: 24px
+			p
+				margin-top: 50px
+				font-size: 24px
+				margin-bottom: 0

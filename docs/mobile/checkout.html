@@ -1,0 +1,206 @@
+
+<div class="page checkout" data-page="checkout">
+  <div class="page-content">
+    <div class="container">
+      <div class="col-xs-12">
+        <div class="checkout__step checkout__step--1 hidden">
+          <div class="checkout__item checkout__item--1 active top-xs flex" id="step-1"><span>1</span>
+            <h3>Состав заказа</h3><img src="img/checkout-arrow-small.svg" alt=""/>
+          </div>
+          <div class="row checkout__step__block">
+            <div class="col-xs-12 calc">
+              <div class="mobile-calc__block" data-price="80">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Одежда и постельное белье 
+                      <div class="tooltip open-popover" data-popover=".popover-about"></div>
+                    </h3><span>Рубашки, футболки, юбки, брюки, наволочки и т.д.</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-8 flex middle-xs">
+                    <div class="add" data-action="substract"><span></span><i>-</i></div>
+                    <input type="number" data-action="keyup" data-price="80" value="16" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0"/>
+                    <div class="add" data-action="add"><span></span><i>+</i></div>
+                  </div>
+                  <div class="col-xs-4 end-xs">
+                    <div class="mobile-calc__block__sum cart__sum">
+                      <h3> <span>1280</span></h3><i class="icon-ruble"></i>
+                      <div class="mobile-calc__block__sum__span">80 р. за вещь</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <hr/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 calc">
+              <div class="mobile-calc__block" data-price="100">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Крупные вещи 
+                      <div class="tooltip open-popover" data-popover=".popover-about"></div>
+                    </h3><span>Пуховики, куртки, одеяла,пледы и т.д.</span>
+                  </div>
+                </div>
+                <div class="row no-active">
+                  <div class="col-xs-8 flex middle-xs">
+                    <div class="add" data-action="substract"><span></span><i>-</i></div>
+                    <input type="number" data-action="keyup" data-price="100" value="0" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0"/>
+                    <div class="add" data-action="add"><span></span><i>+</i></div>
+                  </div>
+                  <div class="col-xs-4 end-xs">
+                    <div class="mobile-calc__block__sum cart__sum">
+                      <h3> <span>0</span></h3><i class="icon-ruble"></i>
+                      <div class="mobile-calc__block__sum__span">100 р. за вещь</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <hr/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="mobile-calc__block mobile-calc__block--delivery">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Доставка 
+                      <div class="tooltip open-popover" data-popover=".popover-about"></div>
+                    </h3><span></span>
+                  </div>
+                </div>
+                <div class="row middle-xs">
+                  <div class="col-xs-8">
+                    <div class="checkbox">
+                      <div class="checkbox__block"></div>
+                      <input id="checkbox-delivery-3" type="radio" name="delivery" data-delivery-price="300" data-delivery-price-free="2000" checked="checked"/>
+                      <label class="label" for="checkbox-delivery-3"></label>
+                      <label class="label-for" for="checkbox-delivery-3">В пределах КАД</label>
+                    </div>
+                    <div class="checkbox">
+                      <div class="checkbox__block"></div>
+                      <input id="checkbox-delivery-4" type="radio" name="delivery" data-delivery-price="500" data-delivery-price-free="3000"/>
+                      <label class="label" for="checkbox-delivery-4"></label>
+                      <label class="label-for" for="checkbox-delivery-4">До 30 км от КАД</label>
+                    </div>
+                  </div>
+                  <div class="col-xs-4 end-xs">
+                    <div class="mobile-calc__block__sum cart-delivery">
+                      <h3 class="cart-delivery-sum">300</h3><i class="icon-ruble cart-delivery-sum-free"></i>
+                      <div class="mobile-calc__block__sum__span cart-delivery-sum-free">от <span>2000</span> р.<br>бесплатно</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-calc__sum mobile-calc__sum--inside">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-5"><a class="save external" href="#step-2">Сохранить</a></div>
+                    <div class="col-xs-7 end-xs total">
+                      <h3>Итого:</h3><span>4500</span><i class="icon-ruble"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr/>
+        </div>
+        <div class="checkout__step checkout__step--2" id="step-2">
+          <div class="checkout__item checkout__item--2 top-xs flex"><span>2</span>
+            <h3>Адрес и дата приезда<br>курьера</h3><img class="svg" src="img/checkout-arrow-small.svg" alt=""/>
+          </div>
+          <div class="row checkout__step__block">
+            <div class="col-xs-12">
+              <label for="adress">Адрес *</label>
+              <input id="adress" type="text" placeholder="Улица, дом/корпус, строение, кв."/>
+            </div>
+            <div class="col-xs-12">
+              <label for="date">Введите дату забора *</label>
+              <input id="date" type="date" placeholder="Например: 15.05.2017" value="2014-04-30"/>
+            </div>
+            <div class="col-xs-12">
+              <label for="comment">Комментарий к заказу </label>
+              <textarea id="comment" placeholder="забрать у консьержа, позвонить в домофон..."></textarea>
+            </div>
+            <div class="col-xs-12">
+              <p>Наш менеджер свяжется с Вами <br>и согласует удобное для Вас время <br>забора белья после оформления заказа. </p>
+              <div class="mobile-calc__sum mobile-calc__sum--inside">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-12 center-xs"><a class="next external" href="#step-3">Далее</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr/>
+        </div>
+        <div class="checkout__step checkout__step--3 hidden" id="step-3">
+          <div class="checkout__item checkout__item--3 top-xs flex"><span>3</span>
+            <h3>Введите контактную<br>информацию</h3><img class="svg" src="img/checkout-arrow-small.svg" alt=""/>
+          </div><a class="checkout__item__account save" href="#">У меня уже есть аккаунт</a>
+          <div class="row checkout__step__block">
+            <div class="col-xs-12">
+              <input id="name" type="text" required="required" placeholder="Имя*"/>
+              <input id="tel" type="text" required="required" placeholder="Телефон*"/>
+              <input type="text" placeholder="Фамилия"/>
+              <input type="text" placeholder="E-mail"/>
+              <p class="required">*Обязательное поле для заполнения</p>
+            </div>
+            <div class="col-xs-12">
+              <div class="mobile-calc__sum mobile-calc__sum--inside">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-12 center-xs"><a class="next external" href="#step-4">Далее</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr/>
+        </div>
+        <div class="checkout__step checkout__step--4 hidden" id="step-4">
+          <div class="checkout__item checkout__item--4 top-xs flex"><span>4</span>
+            <div>
+              <h3>Выберите способ<br>оплаты</h3>
+            </div><img class="svg" src="img/checkout-arrow-small.svg" alt=""/>
+          </div>
+          <div class="row checkout__step__block">
+            <div class="col-xs-12">
+              <div class="checkout__step__payment">
+                <input id="bank" type="radio" value="Банковской картой курьеру при получении" name="payment"/>
+                <label for="bank">
+                  <h3>Банковской картой курьеру при получении</h3>
+                  <p>Оплатите покупку банковской картой при получении. Оплата осуществляется через мобильный терминал PayMe, без комиссии.</p>
+                </label>
+              </div>
+              <div class="checkout__step__payment">
+                <input id="cash" type="radio" value="Банковской картой курьеру при получении" name="payment"/>
+                <label for="cash">
+                  <h3>Наличными курьеру<br>при получении</h3>
+                </label>
+              </div>
+              <div class="checkout__step__payment">
+                <input id="online" type="radio" value="Банковской картой курьеру при получении" name="payment"/>
+                <label for="online">
+                  <h3>Онлайн оплата банковской<br>картой на сайте</h3><img src="../img/mastercard.svg" alt=""/><img src="../img/visa.svg" alt=""/>
+                </label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="checkbox">
+                <div class="checkbox__block"></div>
+                <input id="rules" type="checkbox" checked="checked" name="rul"/>
+                <label class="label" for="rules"></label>
+                <label class="label-for" for="rules">Я прочитал и согласен <a href="#">с условиями оформления и оплаты заказов</a> на сайте Lavateria</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><a class="checkout__sum" href="checkout-ready.html">(Итого: <span>1580</span><i class="icon-ruble"></i>) Оформить</a>
+  </div>
+</div>

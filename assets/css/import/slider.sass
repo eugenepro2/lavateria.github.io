@@ -1,0 +1,47 @@
+@import "color.sass" 
+
+.slider
+	position: relative
+	height: 650px
+	overflow: hidden
+	.container
+		height: initial
+	.swiper-container
+		height: 100%
+		.swiper-slide
+			box-shadow: inset 0px 20px 66.4px 17.6px rgba(102, 102, 102, 0.23)
+			background-size: cover
+			background-position: 50% 50%
+		.swiper-pagination
+			width: 10%
+			right: 0
+			top: 50%
+			width: 45px
+			left: inherit
+			&-bullet
+				display: block
+				width: 10px
+				height: 10px
+				border: 1px solid $blue
+				background: transparent
+				margin: 5px 0 
+				opacity: 1
+				&-active
+					background: $blue
+	h1
+		font-size: 30px
+		letter-spacing: 3px
+		color: $black-two
+		line-height: 1.5
+		font-family: "Ubuntu"
+		text-transform: uppercase
+		position: relative
+		top: 50px
+		padding-left: 40px
+		i
+			font-size: 15px
+			display: block
+	&--2
+		height: 680px
+	&--3
+		height: 590px

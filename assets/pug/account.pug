@@ -1,0 +1,171 @@
+extends include/layout.pug
+
+block content
+	section.account
+		.breadcrumb
+			.container
+				.row.middle-xs.center-xs
+					.col-xs-12
+						h2 Личный кабинет
+						p Здравствуйте, <span>Иван</span>, добро пожаловать в Ваш личный кабинет.
+						a.btn.btn--breadcrumb
+							i Сделать заказ 
+	.container.account__container
+		.row
+			.col-xs-12
+				.tabs
+					ul.tabs__caption.flex.center-xs
+						li.active Текущие заказы / Абонементы 
+						li История заказов
+						li Персональные данные
+					.tabs__content.active
+						.account__table
+							.row
+								.col-sm-13
+									h3 Номер заказа
+								.col-sm-13
+									h3 Тип 
+								.col-sm-13
+									h3 Статус
+								.col-sm-13
+									h3 Дата
+								.col-sm-13
+									h3 Сумма
+						+abonement1
+						+raz1
+						+abonement1
+						+abonement1
+						+abonement1
+					.tabs__content
+						.account__table
+							.row
+								.col-sm-13
+									h3 Номер заказа
+								.col-sm-13
+									h3 Тип 
+								.col-sm-13
+									h3 Статус
+								.col-sm-13
+									h3 Дата
+								.col-sm-13
+									h3 Сумма
+						+abonement2
+						+raz2
+						+abonement2
+						+abonement2
+					.tabs__content.account__personal
+						h4 Личная информация
+						.row
+							.col-sm-6
+								.required
+									input(type="text" placeholder="Имя")
+									span *
+								.required
+									input(type="text" placeholder="Телефон")
+									span *
+							.col-sm-6.account__personal__right
+								input(type="text" placeholder="Имя")
+								input(type="text" placeholder="Телефон")
+							.col-xs-12
+								p *Обязательное поле для заполнения
+								hr
+						h4 Адреса
+						.row
+							.col-xs-12
+								.account__personal__adress#adress-block
+									p г. Санкт-Петербург, ул. Маршала Рокоссовского, д. 11, кв. 11
+									a.account__personal__adress__edit
+										img.svg(src="img/edit.svg", alt="")
+										i редактировать
+									a.account__personal__adress__delete
+										img.svg(src="img/delete.svg", alt="")
+										i удалить
+									.col-xs-12.account__personal__adress__add#edit
+										.row.middle-xs
+											.col-sm-3
+												label Город*
+											.col-sm-9
+												input(type="text" placeholder=" " value="Санкт-Петербург")
+										.row.middle-xs
+											.col-sm-3
+												label Адрес*
+											.col-sm-9
+												input(type="text" placeholder="Улица" value="ул. Маршала Рокоссовского")
+										.row
+											.col-sm-3
+											.col-sm-9
+												.row
+													.col-sm-4
+														input(type="text" placeholder="Дом" value="11")
+													.col-sm-4
+														input(type="text" placeholder="Корпус")
+													.col-sm-4
+														input(type="text" placeholder="Квартира" value="11")
+												.checkbox
+													.checkbox__block
+													input#osnova(type="checkbox" name="delivery")
+													label.label(for="osnova")
+													label.label-for.label-checkout(for="osnova") Сделать основным
+												a.btn.btn--saveadress
+													i Сохранить изменения 
+							.col-xs-12
+								a.btn.btn--addadress
+									i Добавить адрес
+							.col-xs-12.account__personal__adress__add#add
+								.row.middle-xs
+									.col-sm-3
+										label Город*
+									.col-sm-9
+										input(type="text" placeholder=" ")
+								.row.middle-xs
+									.col-sm-3
+										label Адрес*
+									.col-sm-9
+										input(type="text" placeholder="Улица")
+								.row
+									.col-sm-3
+									.col-sm-9
+										.row
+											.col-sm-4
+												input(type="text" placeholder="Дом")
+											.col-sm-4
+												input(type="text" placeholder="Корпус")
+											.col-sm-4
+												input(type="text" placeholder="Квартира")
+										.checkbox
+											.checkbox__block
+											input#osnova(type="checkbox" name="delivery")
+											label.label(for="osnova")
+											label.label-for.label-checkout(for="osnova") Сделать основным
+										a.btn.btn--saveadress
+											i Сохранить адрес
+							.col-xs-12.account__personal__payment
+								hr
+								h4 Платежные реквизиты
+								.row.account__personal__adress
+									.col-sm-6
+										label(for="cart") Номер карты 
+										input#cart(type="text" placeholder="**** **** **** 4000") 
+									.col-sm-6.account__personal__right
+										label(for="term") Срок действия карты 
+										input#term(type="text" placeholder="01/22") 
+									.col-xs-12.end-xs
+										a.account__personal__adress__edit.flex.start-xs
+											img.svg(src="img/edit.svg", alt="")
+											i редактировать
+										a.account__personal__adress__delete.flex.start-xs
+											img.svg(src="img/delete.svg", alt="")
+											i удалить
+							.col-xs-12.account__personal__password
+								hr
+								h4 Пароль
+								.row
+									.col-sm-6
+										label(for="password-1") Изменить пароль 
+										input#password-1(type="password" placeholder=" ") 
+									.col-sm-6.account__personal__right
+										label(for="password-2") Подтверждение пароля 
+										input#password-2(type="password" placeholder=" ") 
+							.col-xs-12.center-xs
+								a.btn.btn--save
+									i Сохранить изминения

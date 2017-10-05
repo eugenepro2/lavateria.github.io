@@ -1,0 +1,34 @@
+.page(data-page='subscriptions-1').subscriptions-inside
+	.page-content
+		.breadcrumb
+			.container
+				.row
+					.col-xs-12
+						h2 Абонемент<br>по корзинам белья
+		.container
+			.row
+				.col-xs-12
+					.subscriptions-inside__block
+						h3 Сколько вещей необходимо<br>стирать каждый месяц?
+						.item-input.item-input--blue
+							select
+								option 2 корзины
+								option 4 корзины
+							img.svg(src="img/checkout-arrow-small-sub.svg", alt="")
+						hr
+					.subscriptions-inside__block
+						h3 На сколько месяцев Вы хотите<br>приобрести абонемент?  
+						.item-input.item-input--blue
+							select
+								option 1 месяц
+								option 2 месяца
+							img.svg(src="img/checkout-arrow-small-sub.svg", alt="")
+						hr
+					.subscriptions-inside__list.subscriptions-inside__list--blue
+						ul
+							li Крупная вещь(пуховики, куртки,одеяла, пледы и т.д.)приравнивается к 3-м обычным;
+							li 4 приемки грязного бельяи 4 доставки чистого белья;
+							li Дополнительно Вы можете сдать неограниченное количество нижнего белья;
+	.toolbar
+		.toolbar-inner
+			a(href="checkout-2.html").checkout__sum (Итого: <span>1580</span><i class="icon-ruble"></i>) Оформить

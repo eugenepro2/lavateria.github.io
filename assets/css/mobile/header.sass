@@ -1,0 +1,169 @@
+@import "../import/color.sass" 
+
+
+.header
+	position: relative
+	z-index: 201
+	&:before
+		background-size: 200% auto
+
+
+.back
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: 36px
+	width: 150px
+	img
+		width: 30px
+
+
+//Мобильное меню
+.mobile-menu
+	position: fixed
+	width: 100%
+	height: 100%
+	background: $white
+	display: none
+	padding-top: 110px
+	box-sizing: border-box
+	z-index: 10
+	ul
+		list-style: none
+		padding-left: 0
+		margin-top: 40px
+		transition: all 0.3s
+		position: absolute
+		&.hidden
+			transform: translateX(-110%)
+			position: absolute
+	li
+		border-bottom: 1px solid #d0d0d0
+		position: relative
+		padding: 25px 60px 25px
+	img
+		width: 35px
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+	a
+		text-decoration: none
+		padding: 25px 0
+		color: $grey-two
+		letter-spacing: 1.8px
+		font-size: 36px
+	&__profile
+		span
+			font-size: 36px
+			padding: 0 30px
+			color: $grey-two
+	&__city
+		position: relative
+		span
+			color: $blue
+			display: inline-block
+			&:after
+				content: ''
+				background: url('/mobile/img/arrow.svg')
+				display: inline-block
+				width: 22px
+				height: 32px
+				position: absolute
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+		&__list
+			border: none !important
+			a
+				display: block
+	&__phone
+		a
+			color: $blue
+	&__back
+		a
+			color: $blue
+		&:after
+			content: ''
+			background: url('/mobile/img/arrow.svg')
+			display: inline-block
+			width: 22px
+			height: 32px
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%) rotate(-180deg)
+	&.on
+		opacity: 1
+		visibility: visible
+		z-index: 200
+		transition: all 0.3s
+	&__hidden
+		opacity: 0
+		transform: translateX(110%)
+		transition: all 0.3s
+		li
+			width: 100%
+		&.on
+			opacity: 1
+			transform: translateX(0%)
+			transition: all 0.3s
+
+
+//Кнопка Открыть меню
+.menu-open
+	display: block
+	margin-right: -35px
+	padding: 35px
+	position: absolute
+	top: 15px
+	right: 40px
+	width: 65px
+	span
+		position: relative
+		display: block
+		width: 100%
+		height: 3px
+		transition: all .3s
+		border-radius: 2px
+		background-color: #999
+		backface-visibility: hidden
+		&:before, &:after
+			position: relative
+			display: block
+			width: 100%
+			height: 3px
+			-webkit-transition: all .3s
+			transition: all .3s
+			border-radius: 2px
+			background-color: #999
+			backface-visibility: hidden
+		&:before
+			position: absolute
+			top: -9px
+			right: 0
+			width: 100%
+			content: ''
+		&:after
+			position: absolute
+			top: -9px
+			right: 0
+			width: 75%
+			content: ''
+			top: 9px
+	&.on span
+		background-color: transparent
+		&:before
+			transform: rotate(45deg) translate(5px, 5px)
+		&:after
+			transform: rotate(-45deg) translate(7px, -8px)
+			width: 100%
+
+
+//Логотип
+.logo__mobile
+	width: 100%
+	position: relative
+	top: 20px
+	img
+		width: 256px

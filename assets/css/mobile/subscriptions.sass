@@ -1,0 +1,95 @@
+@import "../import/color.sass" 
+
+//Абонементы
+.subscriptions
+	hr
+		margin-bottom: 40px
+	p
+		margin-top: 0
+	&__container
+		margin-bottom: 60px
+	&__block
+		text-decoration: none
+		border: solid 2px
+		box-shadow: 0 0 40px 0 rgba(153, 153, 153, 0.25)
+		display: flex
+		padding: 40px
+		margin-bottom: 20px
+		max-height: 235px
+		box-sizing: border-box
+		&--1
+			border-color: $blue
+			img
+				width: 125px
+		&--2
+			border-color: $green
+			img
+				width: 165px
+		h3
+			font-size: 36px
+			letter-spacing: 1.8px
+			font-weight: 600
+			margin: 0
+			color: $black-two
+			margin-left: 40px
+	&-inside
+		padding-bottom: 100px
+		&__block
+			hr
+				display: block !important
+			h3
+				margin-top: 0
+				font-size: 36px
+				font-weight: 400
+			.item-input
+				border: solid 2px $warm-grey
+				display: inline-block
+				border-radius: 5px
+				box-sizing: border-box
+				position: relative
+				select
+					font-size: 38px
+					padding: 25px 110px 25px 40px 
+					appearance: none
+					border: none
+					background: transparent
+				svg, img
+					width: 42px
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					right: 40px
+					path
+						fill: $warm-grey
+				&--blue.active
+					border: solid 2px $blue
+					svg
+						path
+							fill: $blue
+				&--green.active
+					border: solid 2px $green
+					svg
+						path
+							fill: $green
+			hr
+				margin: 40px 0 30px
+		&__list
+			&--blue
+				ul li:before
+					color: $blue
+			&--green
+				ul li:before
+					color: $green
+			ul
+				list-style: none
+				padding-left: 60px
+				li
+					font-size: 30px
+					position: relative
+					margin-bottom: 20px
+					&:before
+						content: "\e905"
+						font-family: icomoon
+						position: absolute
+						left: -50px
+						font-size: 35px

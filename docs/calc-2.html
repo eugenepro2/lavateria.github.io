@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lavataria</title>
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/select-theme-blue.css">
+    <link rel="stylesheet" href="css/select-theme-green.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/flatpickr.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div id="loading">
+      <div id="preloader">
+        <svg id="Calque_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="83.706px" height="96.03px" viewbox="0 0 83.706 96.03" enable-background="new 0 0 83.706 96.03" xml:space="preserve">
+          <g>
+            <style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd; fill: #fff;}</style>
+            <path class="st0" d="M62.9,54.7c-0.8-0.1-1.5-0.2-2.4-0.2c-2,0-3.8,0.4-5.2,0.9l-3-4.5c0.7-0.6,1.2-1,1.2-1c0,0,0,0,0,0c0,0,0,0,0,0						c0,0,3.4-3.4,8.9-3.4c1.1,0,2.2,0.2,3.1,0.4L62.9,54.7L62.9,54.7z M42.7,37L42.7,37h-0.2l-0.1,0c0,0-0.1,0-0.1,0h0h-0.1h0						c0,0-0.1,0-0.1,0c-0.1,0-0.2,0.1-0.3,0.1c-0.1,0-0.1,0-0.2,0.1c0,0,0,0,0,0c-0.1,0.1-0.2,0.1-0.2,0.2c-0.1,0.1-0.1,0.1-0.2,0.2						c0,0,0,0,0,0l-6.4,10.1c-0.2-0.1-0.3-0.2-0.3-0.3c0,0,0,0,0,0c-0.2-0.2-4.9-4.5-11.4-4.2c-1.7,0.1-3.2,0.4-4.5,0.8L16.7,39						c-0.3-0.8-1.2-1.2-2-0.9c-0.8,0.3-1.2,1.2-0.9,2l1.9,5.2c-2.2,1.1-3.5,2.3-3.6,2.4c-0.6,0.6-0.6,1.6,0,2.2c0.6,0.6,1.6,0.6,2.2,0						c0.1-0.1,0.9-0.8,2.4-1.6l2.8,7.5c-2.8,1.1-4.3,2.6-4.4,2.7c-0.6,0.6-0.6,1.6,0,2.2c0.6,0.6,1.6,0.6,2.2,0c0.1-0.1,1.2-1.1,3.3-2						l4.5,12.4c0.2,0.6,0.8,1,1.4,1h32.6c0.7,0,1.2-0.4,1.5-1l4.3-12.5c2.3,0.9,3.8,2.2,3.8,2.2c0.6,0.6,1.6,0.5,2.2-0.1						c0.6-0.6,0.5-1.6-0.1-2.2c-0.1-0.1-2-1.7-4.9-2.8l2.6-7.6c2,0.9,3.1,2,3.2,2c0.6,0.6,1.6,0.5,2.2-0.1c0.6-0.6,0.5-1.6-0.1-2.2						c-0.1-0.1-1.7-1.5-4.2-2.6l1.7-4.9c0.3-0.8-0.2-1.7-1-1.9c-0.8-0.3-1.7,0.2-2,1l-1.7,4.9c-1.3-0.3-2.6-0.5-4.1-0.5						c-6.9,0-10.9,4.2-11.1,4.3c0,0-0.3,0.3-0.7,0.6l-6.9-10.6c0,0,0,0,0,0c-0.1-0.1-0.1-0.1-0.2-0.2c-0.1-0.1-0.1-0.2-0.2-0.2						c0,0,0,0,0,0c-0.1,0-0.1,0-0.2-0.1C43,37.1,42.9,37.1,42.7,37L42.7,37L42.7,37z M60.1,62.8L60.1,62.8l-3.1-4.7						c1-0.3,2.2-0.5,3.5-0.5c0.5,0,0.9,0,1.4,0.1L60.1,62.8L60.1,62.8z M27.7,68.8L27.7,68.8l-0.9-2.4l4.6-7.3c1.2,0.7,2,1.4,2,1.4						c0,0,0,0,0,0c0,0,0,0,0,0c0.2,0.2,4.4,4,9.6,4c5.7,0,9.5-3.9,9.7-4c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0.6-0.6,1.6-1.2l4.6,7.1l-0.8,2.4						H27.7L27.7,68.8z M25.3,57.6L25.3,57.6c1.2-0.1,2.3,0.1,3.2,0.4l-3.1,4.9l-1.8-5C24.1,57.7,24.7,57.6,25.3,57.6L25.3,57.6z M19.7,47						L19.7,47c1.1-0.3,2.3-0.5,3.6-0.6c5.2-0.3,9.1,3.3,9.2,3.4l0,0c0,0,0,0,0,0c0,0,0.3,0.3,0.8,0.6l-3,4.8c-1.5-0.5-3.2-0.8-5.1-0.7						c-0.9,0-1.8,0.2-2.6,0.3L19.7,47L19.7,47z M42.5,41.4L42.5,41.4l5.6,8.6c-1.4,0.7-3.1,1.3-5.2,1.3c-2.1,0-4.1-0.8-5.6-1.6L42.5,41.4						L42.5,41.4z M50.4,58.4c0.1-0.1,0.8-0.8,2.1-1.7l-2.8-4.2c-1.8,0.9-4.1,1.7-6.8,1.7c-2.8,0-5.3-1-7.2-2.1L33,56.5						c1.5,0.9,2.4,1.7,2.5,1.8l0,0c0.1,0.1,3.5,3.2,7.5,3.2C47.3,61.5,50.4,58.5,50.4,58.4L50.4,58.4z"></path>
+          </g>
+        </svg>
+        <div class="circle circle--green">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path class="wave" xmlns="http://www.w3.org/2000/svg" d="m692.033997,15.401c0,0 -12.926025,-10 -19.885986,-12c-13.919983,-5 -29.828003,-3 -40.765991,7c-12.926025,8.999999 -29.829041,11.999999 -44.744019,5c-6.960022,-4 -12.926025,-10 -19.885986,-12c-13.921021,-5 -29.830017,-3 -40.767029,7c-12.925964,8.999999 -29.828979,11.999999 -44.742981,5c-6.959991,-4 -12.927002,-10 -19.886993,-12c-13.920013,-5 -29.82901,-3 -40.766998,7c-12.925995,8.999999 -29.82901,11.999999 -44.744019,5c-6.959991,-4 -12.925995,-10 -19.885986,-12c-13.920013,-5 -29.82901,-3 -40.765991,7l0.993988,-1c-16.902985,12.999999 -39.772003,10.999999 -56.675995,-2c-14.914001,-12 -34.800003,-8 -48.721008,2c-16.903,12.999999 -39.770996,10.999999 -56.674988,-2c-14.915009,-12 -34.801003,-8 -48.721008,2c-16.903,12.999999 -39.771996,10.999999 -56.675999,-2c-14.913998,-12 -34.799998,-8 -48.721,2l0,208.940003l736.778041,0l0,-207.940003c-12.922058,8.999999 -29.825073,11.999999 -44.740051,5z"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="slideout-menu" id="menu">
+      <div class="row"></div>
+    </div>
+    <div id="panel">
+      <header class="header">
+        <div class="container">
+          <div class="row middle-xs">
+            <div class="col-sm-4">
+              <div class="header__city wow fadeInDown"><i class="icon-marker"> </i><span>Выберете город</span>
+                <div class="header__city__hover"><a href="#">Санкт-Петербург</a><a href="#">Москва</a></div><a class="header__phone wow fadeInDown" href="tel:8800">+7(812) 123-45-67</a>
+              </div>
+            </div>
+            <div class="col-sm-4 center-xs"><a class="header__logo" href="#"><img src="img/logo.svg" alt=""></a></div>
+            <div class="col-sm-4 end-sm">
+              <div class="flex end-sm"><a class="header__profile wow fadeInDown" href="account.html"><i class="icon-profile"></i><span>Личный кабинет</span></a></div>
+            </div>
+            <div class="col-xs-12">
+              <nav>
+                <ul>
+                  <li><a href="index.html">Постирать белье</a></li>
+                  <li><a href="calc-2.html">Почистить обувь</a></li>
+                  <li><a href="calc-3.html">Почистить сумки</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Абонементы    </a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="slider slider--2">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('img/slider/2.jpg');">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h1 class="wow fadeIn">Стираем, <br><i class="icon-slider-wave"></i>сушим, гладим,<br>доставляем!</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/slider/3.jpg');">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h1 class="wow fadeIn">Стираем, <br><i class="icon-slider-wave"></i>сушим, гладим,<br>доставляем!</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('img/slider/4.jpg');">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h1 class="wow fadeIn">Стираем, <br><i class="icon-slider-wave"></i>сушим, гладим,<br>доставляем!</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="container">
+          <div class="offer offer--2">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="offer__block wow fadeIn" id="offer">
+                  <div class="row">
+                    <div class="col-xs-12 offer__block__row" data-price="1000">
+                      <div class="row middle-xs">
+                        <div class="col-sm-5">
+                          <h3>Летняя обувь 
+                            <div class="tooltip">
+                              <div class="tooltip__hover">i am tooltip</div>
+                            </div>
+                          </h3><span>Чистка</span>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="offer__cart__sum cart__sum cart__sum--1">
+                            <h3>1000<span>0</span><i class="icon-ruble"></i></h3>
+                          </div>
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="flex between-xs middle-xs offer__block__calc calc">
+                            <div class="add" data-action="substract"><span></span><i>-</i></div>
+                            <input type="number" data-action="keyup" data-price="1000" value="0" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0"><a class="add" href="#offer" data-action="add"><span></span><i>+</i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 offer__block__row" data-price="700">
+                      <div class="row middle-xs">
+                        <div class="col-sm-5">
+                          <h3>Летняя обувь
+                            <div class="tooltip">
+                              <div class="tooltip__hover">i am tooltip i am tooltipi am tooltipi am tooltip</div>
+                            </div>
+                          </h3><span>Чистка + покраска </span>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="offer__cart__sum cart__sum cart__sum--2">
+                            <h3>700<span>0</span><i class="icon-ruble"></i></h3>
+                          </div>
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="flex between-xs middle-xs offer__block__calc calc">
+                            <div class="add" data-action="substract"><span></span><i>-</i></div>
+                            <input type="number" data-action="keyup" data-price="700" value="0" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0"><a class="add" href="#offer" data-action="add"><span></span><i>+</i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 offer__block__row" data-price="800">
+                      <div class="row middle-xs">
+                        <div class="col-sm-5">
+                          <h3>Зимняя обувь 
+                            <div class="tooltip">
+                              <div class="tooltip__hover">i am tooltip i am tooltipi am tooltipi am tooltip</div>
+                            </div>
+                          </h3><span>Чистка</span>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="offer__cart__sum cart__sum cart__sum--3">
+                            <h3>800<span>0</span><i class="icon-ruble"></i></h3>
+                          </div>
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="flex between-xs middle-xs offer__block__calc calc">
+                            <div class="add" data-action="substract"><span></span><i>-</i></div>
+                            <input type="number" data-action="keyup" data-price="800" value="0" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0"><a class="add" href="#offer" data-action="add"><span></span><i>+</i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 offer__block__row" data-price="900">
+                      <div class="row middle-xs">
+                        <div class="col-sm-5">
+                          <h3>Зимняя обувь 
+                            <div class="tooltip">
+                              <div class="tooltip__hover">i am tooltip i am tooltipi am tooltipi am tooltip</div>
+                            </div>
+                          </h3><span>Чистка + покраска</span>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="offer__cart__sum cart__sum cart__sum--4">
+                            <h3>900<span>0</span><i class="icon-ruble"></i></h3>
+                          </div>
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="flex between-xs middle-xs offer__block__calc calc">
+                            <div class="add" data-action="substract"><span></span><i>-</i></div>
+                            <input type="number" data-action="keyup" data-price="900" value="0" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0"><a class="add" href="#offer" data-action="add"><span></span><i>+</i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 offer__block__delivery" id="cart-delivery">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <h4>Доставка:</h4>
+                        </div>
+                        <div class="col-sm-8 end-xs">
+                          <div class="offer__block__delivery__price"> 
+                            <h3 id="cart-delivery-sum">300</h3><i class="icon-ruble"></i><span>/ </span>
+                            <h4 id="cart-delivery-sum-free">от <span>6000</span> руб.- бесплатно</h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 offer__block__delivery__checkbox">
+                          <div class="checkbox">
+                            <div class="checkbox__block"></div>
+                            <input id="checkbox-delivery-1" type="radio" name="delivery" data-delivery-price="300" data-delivery-price-free="2000">
+                            <label class="label" for="checkbox-delivery-1"></label>
+                            <label class="label-for" for="checkbox-delivery-1">В пределах КАД</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 offer__block__delivery__checkbox">
+                          <div class="checkbox">
+                            <div class="checkbox__block"></div>
+                            <input id="checkbox-delivery-2" type="radio" name="delivery" data-delivery-price="500" data-delivery-price-free="3000">
+                            <label class="label" for="checkbox-delivery-2"></label>
+                            <label class="label-for" for="checkbox-delivery-2">До 30 км от КАД</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-12 offer__block__delivery__checkbox">
+                          <div class="checkbox">
+                            <div class="checkbox__block"></div>
+                            <input id="checkbox-delivery-3" type="radio" name="delivery" data-delivery-price="0" data-delivery-price-free="0">
+                            <label class="label" for="checkbox-delivery-3"></label>
+                            <label class="label-for" for="checkbox-delivery-3">Самовывоз: ул. Рентгена, д. 9 литера Б</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <hr>
+                      <div class="row middle-xs center-xs">
+                        <div class="col-sm-5">
+                          <div class="offer__block__total total">Итого:<br><span>0</span><i class="icon-ruble"></i></div>
+                        </div>
+                        <div class="col-sm-7"><a class="btn btn--slider" href="checkout.html"><i>Заказать</i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="heading wow fadeInDown" data-wow-delay="0.3s">
+                <h2>Наши услуги</h2><i class="icon-wave-heading"></i>
+              </div>
+            </div>
+            <div class="col-sm-6 end-sm wow fadeIn" data-wow-delay="0.3s"><a class="services__block flex bottom-xs center-xs" style="background-image: url('img/services/1.png');" href="#">
+                <div class="services__block__block">
+                  <h3>Стирка<br>одежды с глажкой</h3>
+                  <div class="btn btn--services"><i>Подробнее</i></div>
+                  <div class="services__block__hover"></div>
+                </div></a></div>
+            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s"><a class="services__block flex top-xs center-xs" style="background-image: url('img/services/2.png');" href="#">
+                <div class="services__block__block">
+                  <h3>Стирка<br>одеял, подушек, пледов</h3>
+                  <div class="btn btn--services"><i>Подробнее</i></div>
+                  <div class="services__block__hover"></div>
+                </div></a></div>
+            <div class="col-sm-6 end-sm wow fadeIn" data-wow-delay="0.3s"><a class="services__block flex bottom-xs center-xs" style="background-image: url('img/services/3.png');" href="#">
+                <div class="services__block__block">
+                  <h3>Аквачистка<br>курток, пуховиков</h3>
+                  <div class="btn btn--services"><i>Подробнее</i></div>
+                  <div class="services__block__hover"></div>
+                </div></a></div>
+            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s"><a class="services__block flex top-xs center-xs" style="background-image: url('img/services/4.png');" href="#">
+                <div class="services__block__block">
+                  <h3>Профессиональная<br>чистка обуви</h3>
+                  <div class="btn btn--services"><i>Подробнее</i></div>
+                  <div class="services__block__hover"></div>
+                </div></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="how-it-works">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="heading wow fadeInDown" data-wow-delay="0.3s">
+                <h2>Как это работает?</h2><span>4 простых шага</span><i class="icon-wave-heading"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row center-xs">
+            <div class="col-sm-3 wow fadeInDown" data-wow-delay="0.3s">
+              <div class="how-it-works__block middle-xs">
+                <div class="how-it-works__block__icon flex center-xs"><img src="img/how-it-works/1.svg" alt=""></div>
+                <h3>Вы размещаете<br>заказ</h3>
+                <p>Используя наш сайт<br>или по телефону</p>
+              </div>
+            </div>
+            <div class="col-sm-3 wow fadeInDown" data-wow-delay="0.4s">
+              <div class="how-it-works__block middle-xs">
+                <div class="how-it-works__block__icon flex center-xs second"><img src="img/how-it-works/2.svg" alt=""></div>
+                <h3>Курьер забирает<br>вещи </h3>
+                <p>От вашего порога и<br>в удобное для Вас время</p>
+              </div>
+            </div>
+            <div class="col-sm-3 wow fadeInDown" data-wow-delay="0.5s">
+              <div class="how-it-works__block middle-xs">
+                <div class="how-it-works__block__icon flex center-xs"><img src="img/how-it-works/3.svg" alt=""></div>
+                <h3>Стираем, сушим,<br>гладим</h3>
+                <p>Используем гипоаллергенные <br>чистящие средства <br>и профессиональное <br>оборудование Electrolux</p>
+              </div>
+            </div>
+            <div class="col-sm-3 wow fadeInDown" data-wow-delay="0.6s">
+              <div class="how-it-works__block middle-xs">
+                <div class="how-it-works__block__icon flex center-xs fourth"><img src="img/how-it-works/4.svg" alt=""></div>
+                <h3>Курьер возвращает<br>вещи</h3>
+                <p>В течении 48 часов<br>в удобное для Вас<br>место и время</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="review">
+        <div class="review__img review__img--1"></div>
+        <div class="review__img review__img--2"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="heading wow fadeInDown" data-wow-delay="0.3s">
+                <h2>Ваши<br>отзывы</h2>
+              </div>
+            </div>
+            <div class="col-xs-12 review__block wow fadeIn" data-wow-delay="0.3s">
+              <div class="row">
+                <div class="col-sm-3">
+                  <h2 class="review__block__name">Иван Иванов</h2><span class="review__block__date">12.01.2017</span>
+                </div>
+                <div class="col-sm-9">
+                  <div class="review__block__right">
+                    <h3 class="review__block__title">Очень быстрая доставка</h3>
+                    <div class="review__block__star"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
+                      <p>Оценка <span class="star-count">5</span> из 5</p>
+                    </div>
+                    <p class="review__block__text">Я заказал стирку, решил посмотреть как работают, очень волновался, что плохо постирают или доставят не вовремя. Но был очень удивлен, когда мне позвонил курьер и поинтересовался в какое время мне было бы удобно получить свое чистое белье. В общем доставили вовремя, все чистое, выглаженное, теперь буду постоянно пользоваться, чтобы не тратить свое время! Всем советую!</p>
+                    <p class="review__block__comment"><span>Комментарий Lavateria: </span>Большое спасибо! Я заказал стирку, решил посмотреть как работают, очень волновался, что плохо постирают или доставят не вовремя.</p>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 review__block wow fadeIn" data-wow-delay="0.3s">
+              <div class="row">
+                <div class="col-sm-3">
+                  <h2 class="review__block__name">Иван Иванов</h2><span class="review__block__date">12.01.2017</span>
+                </div>
+                <div class="col-sm-9">
+                  <div class="review__block__right">
+                    <h3 class="review__block__title">Хороший сервис</h3>
+                    <div class="review__block__star"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
+                      <p>Оценка <span class="star-count">5</span> из 5</p>
+                    </div>
+                    <p class="review__block__text">Я заказал стирку, решил посмотреть как работают, очень волновался, что плохо постирают или доставят не вовремя. Но был очень удивлен, когда мне позвонил курьер и поинтересовался в какое время мне было бы удобно получить свое чистое белье. </p>
+                    <p class="review__block__comment"><span>Комментарий Lavateria: </span>Спасибо</p>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 review__block wow fadeIn" data-wow-delay="0.3s">
+              <div class="row">
+                <div class="col-sm-3">
+                  <h2 class="review__block__name">Иван Иванов</h2><span class="review__block__date">12.01.2017</span>
+                </div>
+                <div class="col-sm-9">
+                  <div class="review__block__right">
+                    <h3 class="review__block__title">Не понравилось!</h3>
+                    <div class="review__block__star"><i class="icon-star"></i><i class="icon-star"></i>
+                      <p>Оценка <span class="star-count">5</span> из 5</p>
+                    </div>
+                    <p class="review__block__text">Я заказал стирку, решил посмотреть как работают, очень волновался, что плохо постирают или доставят не вовремя. Но был очень удивлен, когда мне позвонил курьер и поинтересовался в какое время мне было бы удобно получить свое чистое белье. </p>
+                  </div>
+                  <div class="review__block__photo">
+                    <div class="review__block__photo"></div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 end-sm">
+              <div class="flex end-sm"><a class="btn btn--review wow fadeIn" data-wow-delay="0.3s" href="#"> <i>Оставить отзыв</i></a></div>
+            </div>
+            <div class="col-sm-6"><a class="btn btn--review btn--review--2 wow fadeIn" data-wow-delay="0.3s" href="#"> <i>Больше отзывов</i></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="heading">
+                <h2>Частые вопросы</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-xs-12">
+              <div class="faq__block__heading wow fadeIn" data-wow-delay="0.3s">
+                <h2>Стирка</h2><i class="icon-wave-heading-2"></i>
+              </div>
+              <div class="faq__block wow fadeIn" data-wow-delay="0.3s">
+                <p class="faq__block__title">Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!</p>
+                <div class="faq__block__answer" style="display: none;">
+                  <p>Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!</p>
+                  <p>Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.</p>
+                </div><a class="btn btn--faq"><i>Ответ</i></a>
+              </div>
+              <div class="faq__block wow fadeIn" data-wow-delay="0.3s">
+                <p class="faq__block__title">Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!</p>
+                <div class="faq__block__answer" style="display: none;">
+                  <p>Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!</p>
+                  <p>Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.</p>
+                </div><a class="btn btn--faq"><i>Ответ</i></a>
+              </div>
+              <div class="faq__block__heading wow fadeIn" data-wow-delay="0.3s">
+                <h2>Заказ и оплата</h2><i class="icon-wave-heading-2"></i>
+              </div>
+              <div class="faq__block wow fadeIn" data-wow-delay="0.3s">
+                <p class="faq__block__title">Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!</p>
+                <div class="faq__block__answer" style="display: none;">
+                  <p>Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!</p>
+                  <p>Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.</p>
+                </div><a class="btn btn--faq"><i>Ответ</i></a>
+              </div>
+              <div class="faq__block wow fadeIn" data-wow-delay="0.3s">
+                <p class="faq__block__title">Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!</p>
+                <div class="faq__block__answer" style="display: none;">
+                  <p>Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!</p>
+                  <p>Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.</p>
+                </div><a class="btn btn--faq"><i>Ответ</i></a>
+              </div>
+              <div class="faq__block wow fadeIn" data-wow-delay="0.3s">
+                <p class="faq__block__title">Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!</p>
+                <div class="faq__block__answer" style="display: none;">
+                  <p>Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!</p>
+                  <p>Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.</p>
+                </div><a class="btn btn--faq"><i>Ответ</i></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="faq__block__heading wow fadeIn" data-wow-delay="0.3s">
+                <h2>Личный кабинет</h2><i class="icon-wave-heading-2"></i>
+              </div>
+              <div class="faq__block wow fadeIn" data-wow-delay="0.3s">
+                <p class="faq__block__title">Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!</p>
+                <div class="faq__block__answer" style="display: none;">
+                  <p>Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!</p>
+                  <p>Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.</p>
+                </div><a class="btn btn--faq"><i>Ответ</i></a>
+              </div>
+              <div class="faq__block wow fadeIn" data-wow-delay="0.3s">
+                <p class="faq__block__title">Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!</p>
+                <div class="faq__block__answer" style="display: none;">
+                  <p>Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!</p>
+                  <p>Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.</p>
+                </div><a class="btn btn--faq"><i>Ответ</i></a>
+              </div>
+              <div class="faq__block__heading wow fadeIn" data-wow-delay="0.3s">
+                <h2>Приемка и доставка</h2><i class="icon-wave-heading-2"></i>
+              </div>
+              <div class="faq__block wow fadeIn" data-wow-delay="0.3s">
+                <p class="faq__block__title">Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!</p>
+                <div class="faq__block__answer" style="display: none;">
+                  <p>Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!</p>
+                  <p>Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.</p>
+                </div><a class="btn btn--faq"><i>Ответ</i></a>
+              </div>
+              <div class="faq__block wow fadeIn" data-wow-delay="0.3s">
+                <p class="faq__block__title">Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!</p>
+                <div class="faq__block__answer" style="display: none;">
+                  <p>Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!</p>
+                  <p>Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.</p>
+                </div><a class="btn btn--faq"><i>Ответ</i></a>
+              </div>
+              <div class="faq__block wow fadeIn" data-wow-delay="0.3s">
+                <p class="faq__block__title">Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!</p>
+                <div class="faq__block__answer" style="display: none;">
+                  <p>Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!</p>
+                  <p>Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.</p>
+                </div><a class="btn btn--faq"><i>Ответ</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 end-sm">
+              <div class="flex end-sm"><a class="btn btn--faq--bottom wow fadeIn" data-wow-delay="0.3s" href="#"><i>Задать вопрос</i></a></div>
+            </div>
+            <div class="col-sm-6"><a class="btn btn--faq--bottom--2 wow fadeIn" data-wow-delay="0.4s" href="#"><i>Перейти в раздел</i></a></div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container footer__top">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="footer__logo wow fadeInUp" data-wow-delay="0.3s"><img src="img/logo.svg" alt="Логотип"><span>Стираем, сушим, гладим,<br>доставляем!</span></div>
+            </div>
+            <div class="col-sm-9">
+              <div class="row">
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="heading-2">
+                    <h2>О компании</h2><i class="icon-wave-heading-2"></i>
+                  </div>
+                  <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li> <a href="#">Частые вопросы</a></li>
+                    <li> <a href="#">Ваши отзывы</a></li>
+                    <li> <a href="#">Статьи</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.35s">
+                  <div class="heading-2">
+                    <h2>Наши услуги</h2><i class="icon-wave-heading-2"></i>
+                  </div>
+                  <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li> <a href="#">Частые вопросы</a></li>
+                    <li> <a href="#">Ваши отзывы</a></li>
+                    <li> <a href="#">Статьи</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.4s">
+                  <div class="heading-2">
+                    <h2>Личный кабинет</h2><i class="icon-wave-heading-2"></i>
+                  </div>
+                  <ul>
+                    <li><a href="#">Войти</a></li>
+                    <li> <a href="#">Регистрация</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 footer__last wow fadeInUp" data-wow-delay="0.45s">
+                  <div class="heading-2">
+                    <h2>Контакты</h2><i class="icon-wave-heading-2"></i>
+                    <p>+7(812) 123-45-67<br>info@lavateria.ru<br>г. Санкт-Петербург, <br>ул. Рентгена, д. 9, <br>литера Б</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+                <p>Copyright © LAVATERIA 2017. Все права защищены.</p>
+              </div>
+              <div class="col-sm-6 end-sm col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="flex end-sm"><a href="#">by:<i class="icon-logo_excv"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/slideout.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/select.min.js"></script>
+    <script src="https://unpkg.com/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+    <script src="js/ResizeSensor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

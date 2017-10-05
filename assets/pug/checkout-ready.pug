@@ -1,0 +1,110 @@
+extends include/layout.pug
+
+block content
+	section.checkout
+		.breadcrumb
+			.container
+				.row.middle-xs.center-xs
+					.col-xs-12
+						h2 Иван Иванов, спасибо за Ваш заказ в лаватерии
+						p В ближайшее время с Вами свяжется менеджер для подтверждения заказа, <br>а пока проверьте, пожалуйста, его состав, дату и  адрес доставки:
+		.checkout__ready
+			.container.checkout__container
+				.row
+					.col-xs-12
+						h3.checkout__ready__number-order Заказ №201032
+					.col-xs-12
+						.row
+							.col-sm-6
+								.checkout__ready__name
+									h4 1. Одежда и постельное белье с глажкой 
+							.col-sm-4
+								.checkout__ready__count
+									span 16 шт
+							.col-sm-2
+								.checkout__ready__sum
+									span 1280
+									i.icon-ruble
+							.col-xs-12
+								hr
+					.col-xs-12
+						.row
+							.col-sm-6
+								.checkout__ready__name
+									h4 2. Крупные вещи 
+							.col-sm-4
+								.checkout__ready__count
+									span 1 шт
+							.col-sm-2
+								.checkout__ready__sum
+									span 100
+									i.icon-ruble
+							.col-xs-12
+								hr
+					.col-xs-12
+						.row
+							.col-sm-6
+								.checkout__ready__name
+									h4 3. Забор и доставка курьером  
+							.col-sm-4
+								.checkout__ready__count
+									span -
+							.col-sm-2
+								.checkout__ready__sum
+									span 300
+									i.icon-ruble
+							.col-xs-12
+								hr
+					.col-xs-12
+						.row
+							.col-sm-6
+								.checkout__ready__name.checkout__ready__name--total
+									h4 Итого: 
+							.col-sm-4
+								.checkout__ready__count.checkout__ready__count--total
+									span 17 шт
+							.col-sm-2
+								.checkout__ready__sum.checkout__ready__count--total
+									span 1580
+									i.icon-ruble
+							.col-xs-12
+								hr
+					.col-xs-12.checkout__ready__more
+						.row
+							.col-sm-3
+								h5 Адрес забора белья:  
+							.col-sm-9
+								p г. Санкт-Петербург, ул. Маршала Рокоссовского, д. 11 
+							.col-sm-3
+								h5 Дата приезда курьера:
+							.col-sm-9
+								p 19.06.2017
+							.col-sm-3
+								h5 Способ оплаты:
+							.col-sm-9
+								p Наличными курьеру при получении
+							.col-sm-3
+								h5 Телефон:
+							.col-sm-9
+								p +7(900)000-00-00
+							.col-sm-3
+								h5 E-mail:
+							.col-sm-9
+								p info@mail.ru
+		.checkout__ready__sale
+			.container
+				.row
+					div
+						h2 Воспользуйтесь нашей новой услугой
+							span Профессиональная<br>чистка обуви
+						h3  - 30%
+							span скидкой
+						img(src="img/checkout-arrow.svg", alt="")
+						a.btn.btn--checkout--ready
+							i Почистить обувь
+						p *Акция действует, если Вы впервые cделали заказ
+
+
+
+
+

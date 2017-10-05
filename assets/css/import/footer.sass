@@ -1,0 +1,70 @@
+@import "color.sass" 
+
+.footer
+	position: relative
+	box-shadow: 0.3px 3px 66.4px 17.6px rgba(102, 102, 102, 0.16)
+	background: $white
+	z-index: 30
+	&:before
+		content: ''
+		background: url('/img/footer-wave.png') no-repeat
+		width: 100%
+		height: 20px
+		display: block
+		position: absolute
+		z-index: 10
+		top: -11px
+		background-size: 100%
+		@media (max-width: 1270px)
+			top: -11px
+		@media (min-width: 1500px)
+			top: -15px
+	&__top
+		padding-top: 50px
+		margin-bottom: 16px
+	&__logo
+		width: 173px
+		img
+			width: 100%
+			display: block
+			margin-bottom: 13px
+		span
+			font-family: 'Ubuntu'
+			font-size: 14px
+	ul
+		margin-top: 7px
+		a
+			color: $warm-grey
+			text-decoration: none
+			line-height: 1.5
+			transition: color 0.3
+			font-size: 16px
+			&:hover
+				color: $blue
+	p
+		font-size: 16px
+		line-height: 22px
+		color: $warm-grey
+		margin-top: 10px
+	&__copyright
+		padding: 24px
+		border: 1px solid $white-two
+		p
+			margin-top: 0px
+			font-size: 12px
+			color: $warm-grey
+			line-height: normal
+		a
+			font-size: 12px
+			color: $warm-grey
+			text-decoration: none
+			margin-right: 26px
+			i
+				font-size: 15px
+				position: relative
+				left: 12px
+				top: 1px
+	&__last
+		position: relative
+		left: 20px
+	

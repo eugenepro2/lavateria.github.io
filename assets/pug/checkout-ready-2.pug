@@ -1,0 +1,105 @@
+extends include/layout.pug
+
+block content
+	section.checkout
+		.breadcrumb
+			.container
+				.row.middle-xs.center-xs
+					.col-xs-12
+						h2 Иван Иванов, спасибо за Ваш заказ в лаватерии
+						p В ближайшее время с Вами свяжется менеджер для подтверждения заказа, <br>а пока проверьте, пожалуйста, его состав, дату и  адрес доставки:
+		.checkout__ready
+			.container.checkout__container
+				.row
+					.col-xs-12
+						h3.checkout__ready__number-order Заказ №201033
+					.col-xs-12
+						.row
+							.col-xs-12
+								.checkout__ready__name.checkout__ready__name--total
+									h4 Абонемент по корзинам белья 
+							.col-xs-12
+								hr
+					.col-xs-12
+						.row
+							.col-sm-6
+								.checkout__ready__name
+									h4 Количество корзин белья в месяц 
+							.col-sm-4
+								.checkout__ready__count
+									span 16 кор
+							.col-sm-2
+							.col-xs-12
+								hr
+					.col-xs-12
+						.row
+							.col-sm-6
+								.checkout__ready__name
+									h4 Время действия абонемента  
+							.col-sm-4
+								.checkout__ready__count
+									span 3 мес
+							.col-sm-2
+							.col-xs-12
+								hr
+					.col-xs-12
+						.row
+							.col-sm-6
+								.checkout__ready__name
+									h4 Количество приездов курьера  
+							.col-sm-4
+								.checkout__ready__count
+									span 7 раз
+							.col-sm-2
+							.col-xs-12
+								hr
+					.col-xs-12
+						.row
+							.col-sm-6
+								.checkout__ready__name.checkout__ready__name--total
+									h4 Итого: 
+							.col-sm-4
+								.checkout__ready__count.checkout__ready__count--total
+									span
+							.col-sm-2
+								.checkout__ready__sum.checkout__ready__count--total
+									span 4500
+									i.icon-ruble
+							.col-xs-12
+								hr
+					.col-xs-12.checkout__ready__more
+						.row
+							.col-sm-3
+								h5 Адрес забора белья:  
+							.col-sm-9
+								p г. Санкт-Петербург, ул. Маршала Рокоссовского, д. 11 
+							.col-sm-3
+								h5 Способ оплаты:
+							.col-sm-9
+								p Наличными курьеру при получении
+							.col-sm-3
+								h5 Телефон:
+							.col-sm-9
+								p +7(900)000-00-00
+							.col-sm-3
+								h5 E-mail:
+							.col-sm-9
+								p info@mail.ru
+				.row
+		.checkout__ready__sale
+			.container
+				.row
+					.col-xs-12
+						h2 Воспользуйтесь нашей новой услугой
+							span Профессиональная<br>чистка обуви
+						h3  - 30%
+							span скидкой
+						img(src="img/checkout-arrow.svg", alt="")
+						a.btn.btn--checkout--ready
+							i Почистить обувь
+						p *Акция действует, если Вы впервые cделали заказ
+
+
+
+
+

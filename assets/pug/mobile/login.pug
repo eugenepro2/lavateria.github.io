@@ -1,0 +1,25 @@
+.page(data-page='login').login
+	.page-content
+		.breadcrumb
+			.container
+				.row
+					.col-xs-12
+						h2 Вход
+		.container
+			.row
+				.col-xs-12
+					input#phone(type="tel" value="" placeholder="+7(***)***-**-**")
+					input#password(type="password" placeholder="Пароль")
+					.checkbox
+						.checkbox__block
+						input#pass(type="checkbox")
+						label.label(for="pass")
+						label.label-for(for="pass") Показать пароль
+					input(type='submit' value="Войти")
+					a.login__forget(href="forget.html") Забыли пароль
+				.col-xs-12
+					.login__new
+						h3 Новый клиент? 
+						p Сохраните личные данные, чтобы не вводить их при работе с сайтом и заказах на доставку. 
+						a.btn.btn--registration(href="registration.html")
+							i Регистрация

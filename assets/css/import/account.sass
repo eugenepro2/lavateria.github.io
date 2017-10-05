@@ -1,0 +1,236 @@
+@import "color.sass" 
+
+.account
+	&__container
+		max-width: 790px
+		margin-bottom: 50px
+	&__table
+		padding-left: 24px
+		margin-bottom: 13px
+		background: $white
+		h3
+			font-size: 16px
+			color: $warm-grey
+			text-align: center
+			transition: all 0.3s
+	&__block
+		border: 1px solid $blue
+		box-shadow: 0.3px 3px 24px 0 rgba(153, 153, 153, 0.15)
+		text-align: center
+		padding: 25px 0
+		padding-left: 24px
+		margin-bottom: 15px
+		&__number-order
+			font-size: 18px
+			font-weight: 600
+		&__type
+			font-size: 16px
+		&__status
+			font-size: 16px
+			&--green
+				color: $green
+			&--red
+				color: #ff5063
+		&__date
+			font-size: 16px
+		&__sum
+			font-size: 18px
+			font-weight: 600
+			+ i
+				font-size: 13px
+				margin-left: 5px
+		&__inside
+			display: none
+			text-align: left
+			padding: 17px 60px 0 40px
+			margin-bottom: 30px
+			&__heading
+				font-size: 16px
+				color: $warm-grey
+				margin-bottom: 25px
+				&--2
+					font-size: 18px
+					font-weight: 600
+					margin-bottom: 25px
+					margin-top: 25px
+			&__name
+				font-size: 16px
+				color: $black-two
+			&--total
+				font-weight: 600
+			&__count
+				font-size: 18px
+				font-weight: 600
+				&--total
+					color: $blue
+			&__sum
+				font-size: 18px
+				font-weight: 600
+				text-align: right
+				&--total
+					color: $blue
+				i
+					font-size: 13px
+					margin-left: 5px
+			hr
+				margin: 15px 0 
+				border: none
+				border-top: 1px solid $white-two
+			&__more
+				margin-top: 20px
+				h5
+					font-size: 16px
+					line-height: 1.5
+					color: $warm-grey
+				p
+					line-height: 1.5
+					font-weight: 600
+					font-size: 16px
+			&__table
+				padding: 0 140px
+				.row
+					height: inherit
+					background: rgba($white-two, .3)
+				.row:nth-of-type(2)
+					background: rgba($grey, .4)
+				span
+					display: block
+					padding: 10px
+					font-size: 14px
+					line-height: 2.14
+					color: $grey-two
+					text-align: left
+		&__courier
+			display: none
+			background: rgba($blue, .15)
+			margin-left: -24px
+			margin-bottom: -25px
+			padding: 15px 33px 15px 65px
+			color: $blue
+			span
+				font-size: 30px
+			p 
+				font-size: 14px
+				font-weight: 600
+				display: inline-block
+				margin-left: 10px
+	&__personal
+		width: 600px
+		&__right
+			input, label
+				margin-left: 23px
+		h4
+			font-size: 18px
+			font-weight: 600
+			color: $black-two
+			margin-bottom: 30px
+		input
+			width: 270px
+		label
+			color: $black-two
+		p
+			font-size: 14px
+			color: $warm-grey
+		hr
+			margin-top: 30px
+			margin-bottom: 30px
+			border: none
+			border-top: 1px solid #dddddd
+		&__adress
+			p
+				font-size: 14px
+				font-weight: 600
+				color: $black-two
+			a
+				margin-top: 10px
+				line-height: 0
+				display: inline-block
+				text-decoration: none
+				margin-right: 15px
+				transition: all 0.3s
+				i
+					margin-left: 10px
+					font-size: 14px
+					font-weight: 600
+				&:hover i
+					color: $warm-grey
+					transition: all 0.3s
+				&:hover svg path 
+					fill: $warm-grey
+					transition: all 0.3s
+			svg
+				width: 11px
+				position: relative
+				top: 2px
+			&__edit
+				i
+					color: $green
+				svg path
+					fill: $green
+			&__delete
+				i
+					color: #ff5063
+				svg path
+					fill: #ff5063
+			&__add
+				display: none
+				margin-top: 30px
+				.row
+					height: initial
+					margin-bottom: 30px
+				label
+					color: $warm-grey
+					font-size: 14px
+					margin-bottom: 0
+				input
+					margin-bottom: 0
+					width: 100%
+				.label-for
+					position: relative
+					font-size: 16px
+					top: -5px
+					margin-left: 5px
+		&__payment
+			.row
+				height: initial
+			input
+				margin-bottom: 0px
+		&__password
+			input
+				margin-bottom: 0px
+
+
+.col-sm-13
+	width: 101px
+	margin-right: 20px
+.col-sm-14
+	width: 117px
+
+
+
+//Табы
+.tabs__caption
+	margin-top: -38px
+	li
+		color: $grey-two
+		font-size: 18px
+		text-align: center
+		white-space: nowrap
+		font-weight: bold
+		padding: 20px
+		cursor: pointer
+		border-bottom-left-radius: 20px
+		border-bottom-right-radius: 20px
+		transition: all 0.5s
+		margin-bottom: 60px
+		&:hover
+			color: $black-two
+	.active
+		background-color: rgba($grey, .2)
+		color: $black-two
+.tabs__content
+	display: none
+	padding-left: 25px
+	transition: all 0.3s
+.tabs__content.active
+	display: block

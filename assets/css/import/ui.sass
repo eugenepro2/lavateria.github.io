@@ -1,0 +1,502 @@
+@import "color.sass" 
+
+body
+	font-family: "Segoe UI" !important
+	color: $black-two
+	overflow-x: hidden
+
+#panel
+	overflow: hidden
+
+.container
+	max-width: 1150px
+	box-sizing: border-box
+	width: 100%
+	height: 100%
+
+.row
+	height: 100%
+
+.flex
+	display: flex
+
+*
+	outline: none
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+	-webkit-appearance: none
+	margin: 0
+input[type="number"]
+	-moz-appearance: textfield
+
+
+//Стилизация Ckeckbox
+.checkbox
+	position: relative
+	&__block
+		width: 20px
+		height: 20px
+		border: 1px solid $white-two
+		border-radius: 4px
+		position: relative
+		display: inline-block
+	.label
+		width: 20px
+		height: 20px
+		cursor: pointer
+		position: absolute
+		left: 5px
+		top: 4px
+		&:after
+			content: ''
+			width: 12px
+			height: 5px
+			position: absolute
+			top: 1px
+			left: -1px
+			border: 2px solid $black-two
+			border-top: none
+			border-right: none
+			background: transparent
+			opacity: 0
+			transform: rotate(-45deg)
+	input[type=radio]
+		visibility: hidden
+		margin-left: -18px
+		&:checked + label:after
+			opacity: 1
+		&:checked + label + .label-for
+			color: $black-two
+	input[type=checkbox]
+		visibility: hidden
+		display: none
+		&:checked + label:after
+			opacity: 1
+		&:checked + label + .label-for
+			color: $black-two
+	label
+		font-size: 16px
+		color: $black-two
+		cursor: pointer
+	label.label-for
+		display: inline-block
+		color: $warm-grey
+
+//Стилизация Radio
+.radio
+	position: relative
+	margin-top: 15px
+	margin-left: 8px
+	&__block
+		width: 20px
+		height: 20px
+		border: 1px solid $white-two
+		border-radius: 50%
+		position: absolute
+		display: inline-block
+	.label
+		width: 20px
+		height: 20px
+		cursor: pointer
+		position: absolute
+		left: 5px
+		top: 4px
+		&:after
+			content: ''
+			width: 12px
+			height: 12px
+			position: absolute
+			top: 1px
+			left: 0px
+			background: $blue
+			border-radius: 50%
+			opacity: 0
+			transform: rotate(-45deg)
+	input[type=radio]
+		visibility: hidden
+		margin-left: -18px
+		&:checked + label:after
+			opacity: 1
+		&:checked + label + .label-for
+			color: $black-two
+			h3, p
+				color: inherit
+	label
+		font-size: 16px
+		color: $black-two
+		cursor: pointer
+	label.label-for
+		margin-left: 68px
+		display: inline-block
+		color: $warm-grey
+		h3
+			font-size: 18px
+			font-weight: 600
+			line-height: 1.33
+			margin-bottom: 15px
+			color: $warm-grey
+		p
+			color: $warm-grey
+			letter-spacing: 1.71
+			font-size: 14px
+			font-weight: 400
+		img
+			width: 45px
+			margin-right: 20px
+
+.add
+	position: relative
+	display: block
+	overflow: hidden
+	border: none
+	box-shadow: 0 0 9px 0 rgba(102, 102, 102, 0.15) 
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	text-align: center
+	transition: all 0.3s
+	cursor: pointer
+	display: block
+	span
+		position: absolute
+		display: block
+		width: 0
+		height: 0
+		border-radius: 50%
+		background-color: $blue
+		-webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out
+		transition: width 0.4s ease-in-out, height 0.4s ease-in-out
+		-webkit-transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%)
+		z-index: 10
+	&:hover span
+		width: 350%
+		height: 350%
+	&:active
+		background-color: $blue
+	i
+		font-size: 20px
+		font-weight: 100
+		color: $black-two
+		position: relative
+		display: inline-block
+		top: 2px
+		user-select: none
+		z-index: 10
+	&:hover i
+		color: $white
+input[type="number"]
+	width: 29px
+	height: 29px
+	border-radius: 5px
+	border: 1px solid $white-two
+	font-size: 16px
+	text-align: center
+	color: $grey
+	background: transparent
+
+
+a
+	cursor: pointer
+//Кнопки
+.btn
+	display: inline-block
+	font-size: 16px
+	box-sizing: border-box
+	color: $white
+	border-radius: 25px
+	padding: 15px 35px
+	text-decoration: none
+	letter-spacing: 0.8px
+	border: 1px solid $white
+	transition: all 0.3s
+	position: relative
+	overflow: hidden
+	transition: all 0.3s
+	cursor: pointer
+	i
+		position: relative
+		z-index: 11
+		width: 100%
+		font-style: normal
+	span
+		position: absolute
+		display: block
+		width: 0
+		height: 0
+		border-radius: 50%
+		-webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out
+		transition: width 0.4s ease-in-out, height 0.4s ease-in-out
+		-webkit-transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%)
+		z-index: 10
+	&:hover span
+		width: 350%
+		height: 350%
+	&--slider
+		background: $blue-two
+		padding: 11px 33px
+		border: none
+		top: 4px
+		left: -15px
+		border: 1px solid $blue
+		span
+			background-color: #fff
+		&:hover i
+			color: $blue
+	&--services
+		font-size: 14px
+		letter-spacing: 0.1px
+		padding: 15px 27px
+		span
+			background-color: $white
+		&:hover
+			color: $blue
+			border: 1px solid transparent
+	&--subscription--blue
+		border: 1px solid $blue
+		color: $blue
+		font-size: 13px
+		transition: all 0.3s
+		padding: 15px 29px
+		margin-top: 16px
+		i
+			padding: 0 !important
+			font-size: 13px !important
+		span
+			background-color: $blue
+		&:hover
+			color: $white
+			border: 1px solid transparent
+	&--subscription--green
+		border: 1px solid $green
+		color: $green
+		font-size: 13px
+		transition: all 0.3s
+		padding: 15px 29px
+		margin-top: 16px
+		i
+			padding: 0 !important
+			font-size: 13px !important
+		span
+			background-color: $green
+		&:hover
+			color: $white
+			border: 1px solid transparent
+	&--review
+		border: 1px solid $blue
+		color: $blue
+		font-size: 14px
+		margin-top: 42px
+		padding: 13px 28px
+		position: relative
+		right: 15px
+		z-index: 100
+		span
+			background-color: $blue
+		&:hover
+			color: $white
+			border: 1px solid transparent
+	&--review--2
+		background: $blue
+		color: $white
+		right: initial
+		left: 15px
+		span
+			background-color: $white
+		&:hover
+			color: $blue
+	&--faq
+		font-size: 14px
+		letter-spacing: 0.1px
+		padding: 13px 20px
+		margin-top: 28px
+		color: $green
+		border: 1px solid $green
+		margin-bottom: 35px
+		span
+			background-color: $green
+		&:hover
+			color: $white
+			border: 1px solid transparent
+	&--faq--bottom
+		font-size: 14px
+		border: 1px solid $green
+		color: $green
+		padding: 13px 33px
+		position: relative
+		right: 13px
+		margin-top: 22px
+		background-color: transparent
+		span
+			background-color: $green
+		&:hover
+			color: $white
+			border: 1px solid transparent
+	&--faq--bottom--2
+		font-size: 14px
+		position: relative
+		left: 17px
+		margin-top: 22px
+		padding: 13px 22px
+		background: $green
+		border: 1px solid $green
+		span
+			background-color: #f5f5f5
+		&:hover
+			color: $green
+	&--checkout
+		border: 1px solid $blue
+		color: $blue-two
+		margin-left: 27px
+		span
+			background-color: $blue
+		i
+			font-size: 14px
+			letter-spacing: 0.1px
+		&:hover
+			color: $white
+			border: 1px solid transparent
+		&--ready
+			border-color: #ff5063
+			background: #ff5063
+			padding: 15px 25px
+			margin-top: -26px
+			color: $white
+			border-color: #ff5063
+			width: 175px
+			span
+				background-color: $white
+			i
+				font-size: 14px
+			&:hover
+				i
+					color: #ff5063
+	&--account
+		border: 1px solid $blue
+		color: $blue
+		padding: 10px 28px 12px
+		i
+			font-size: 12px
+		span
+			background-color: $blue
+		&:hover
+			color: $white
+			border: 1px solid transparent
+	&--courier
+		background-color: $blue
+		border: 1px solid $blue
+		padding: 11px 24px 13px
+		i
+			font-size: 12px
+		span
+			background-color: $white
+		&:hover
+			color: $blue
+			border: 1px solid transparent
+	&--breadcrumb
+		background: #f5f5f5
+		color: $blue
+		width: 160px
+		border: 1px solid $blue
+		position: absolute
+		top: 50%
+		right: 72px
+		font-size: 12px
+		transform: translateY(-50%)
+		span
+			background-color: $blue
+		&:hover
+			color: $white
+			border: 1px solid transparent
+	&--addadress
+		margin-top: 30px
+		background: $green
+		i
+			font-size: 12px
+		span
+			background-color: $white
+		&:hover
+			color: $green
+			border: 1px solid $green
+	&--saveadress
+		margin-top: 30px
+		border: 1px solid $green
+		line-height: normal !important
+		color: $green
+		i
+			font-size: 12px !important
+			margin-left: 0 !important
+			position: relative
+			top: -1px
+		span
+			background-color: $green
+		&:hover
+			border: 1px solid transparent
+			i
+				color: $white !important
+	&--save
+		margin-top: 30px
+		margin-bottom: 80px
+		background: $blue
+		i
+			font-size: 12px
+		span
+			background-color: $white
+		&:hover
+			color: $blue
+			border: 1px solid $blue
+	&--registration
+		margin-top: 20px
+		background-color: $green
+		border-radius: 50px
+		width: 100%
+		text-align: center
+		padding: 25px 40px
+		margin-bottom: 80px
+		i
+			font-size: 30px
+			font-weight: 600
+
+//Заголовки
+.heading
+	text-align: center
+	margin-bottom: 60px
+	h2
+		font-size: 30px
+		line-height: 1.83
+		letter-spacing: 3px
+		color: $black-two
+		font-family: 'Ubuntu'
+		text-transform: uppercase
+	i
+		font-size: 15px
+.heading-2
+	h2
+		font-size: 18px
+		font-weight: 600
+	i
+		font-size: 8px
+		color: $blue
+
+
+//Типа хлебные крошки
+.breadcrumb
+	background: rgba($grey, .2)
+	padding: 40px 0 40px
+	margin-bottom: 38px
+	.row
+		position: relative
+	h2
+		font-size: 24px
+		color: $black-three
+		font-family: "Ubuntu"
+		text-transform: uppercase
+		margin-top: 12px
+		letter-spacing: 2.4px
+	p
+		margin-top: 10px
+		font-size: 16px
+		span
+			font-weight: bold

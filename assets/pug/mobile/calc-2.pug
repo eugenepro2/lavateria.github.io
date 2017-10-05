@@ -1,0 +1,102 @@
+.page(data-page='calc-2').mobile-calc
+	.page-content
+		.container
+			.row
+				.col-xs-12
+					h2 Я хочу сдать в чистку
+				.col-xs-12
+					.mobile-calc__block
+						.row
+							.col-xs-12
+								h3 Кожаные сумки 
+									.tooltip(data-popover=".popover-about" class="open-popover")
+								span С покраской
+						.row
+							.col-xs-8.flex.middle-xs
+								.add(data-action="substract")
+									span
+									i -
+								input(type="number" data-action="keyup" data-price="80" value="2" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0")
+								.add(data-action="add")
+									span
+									i +
+							.col-xs-4.end-xs
+								.mobile-calc__block__sum
+									h3 500
+									i.icon-ruble
+									span за шт.
+							.col-xs-12
+								hr
+				.col-xs-12
+					.mobile-calc__block
+						.row
+							.col-xs-12
+								h3 Текстильные сумки 
+									.tooltip(data-popover=".popover-about" class="open-popover")
+								span Чистка
+						.row.no-active
+							.col-xs-8.flex.middle-xs
+								.add(data-action="substract")
+									span
+									i -
+								input(type="number" data-action="keyup" data-price="80" value="0" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0")
+								.add(data-action="add")
+									span
+									i +
+							.col-xs-4.end-xs
+								.mobile-calc__block__sum
+									h3 700
+									i.icon-ruble
+									span за шт.
+							.col-xs-12
+								hr
+				.col-xs-12
+					.mobile-calc__block.mobile-calc__block--delivery
+						.row
+							.col-xs-12
+									h3 Доставка 
+										.tooltip(data-popover=".popover-about" class="open-popover")
+									span
+						.row.middle-xs
+							.col-xs-8
+								.checkbox
+									.checkbox__block
+									input#checkbox-delivery-1(type="radio" name="delivery" data-delivery-price="300" data-delivery-price-free="2000" checked)
+									label.label(for="checkbox-delivery-1")
+									label.label-for(for="checkbox-delivery-1") В пределах КАД
+								.checkbox
+									.checkbox__block
+									input#checkbox-delivery-2(type="radio" name="delivery" data-delivery-price="500" data-delivery-price-free="3000")
+									label.label(for="checkbox-delivery-2")
+									label.label-for(for="checkbox-delivery-2") До 30 км от КАД
+								.checkbox
+									.checkbox__block
+									input#checkbox-delivery-3(type="radio" name="delivery" data-delivery-price="0" data-delivery-price-free="0")
+									label.label(for="checkbox-delivery-3")
+									label.label-for(for="checkbox-delivery-3") Самовывоз:<br><span>ул. Рентгена, д. 9 литера Б</span>
+							.col-xs-4.end-xs
+								.mobile-calc__block__sum
+									h3 300
+									i.icon-ruble
+									span от 6000 р.<br>бесплатно
+		.mobile-calc__sum
+			.container
+				.row
+					.col-xs-12.end-xs
+							h3 Итого:
+							span 1300
+							i.icon-ruble
+		a(href="checkout.html").mobile-calc__checkout Оформить заказ
+		.popover.popover-about
+			.popover-angle
+			.popover-inner
+				.content-block
+					p About
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac diam ac quam euismod porta vel a nunc. Quisque sodales scelerisque est, at porta justo cursus ac.
+
+
+
+
+
+
+		

@@ -1,0 +1,68 @@
+.page(data-page='profile-personal').profile.profile__personal
+	.page-content
+		.breadcrumb
+			h2 Персональные данные
+		.container
+			.row
+				.col-xs-12
+					.profile__personal__block
+						h3 Личная информация
+						input(type="text" value="Иван" placeholder="Имя*")
+						input(type="text" placeholder="Фамилия")
+						input#tel(type="tel" placeholder="Номер телефона*")
+						input(type="email" value="info@mail.ru" placeholder="E-mail")
+						p.required *Обязательное поле для заполнения
+					hr
+				.col-xs-12
+					.profile__personal__block
+						h3 Адреса
+						.profile__personal__block__adress
+							.profile__personal__block__adress__block
+								p г. Санкт-Петербург, ул. Маршала Рокоссовского, д. 11, кв. 11
+								a.delete(href="#")
+									img(src="img/delete.svg", alt="")
+							.profile__personal__block__adress__add
+								div(style="display: none;")
+									label Город*
+									input(type="text" value="Санкт-Петербург")
+									label Адрес*
+									input(type="text" value="ул. Маршала Рокоссовского" placeholder="Улица")
+									input(type="text" value="11" placeholder="Дом")
+									input(type="text" placeholder="Корпус")
+									input(type="text" value="11" placeholder="Квартира")
+								input(type="submit" value="Редактировать").btn.edit
+							.profile__personal__block__adress__add
+								div(style="display: none;")
+									label Город*
+									input(type="text" placeholder="Город")
+									label Адрес*
+									input(type="text" placeholder="Улица")
+									input(type="text" placeholder="Дом")
+									input(type="text" placeholder="Корпус")
+									input(type="text" placeholder="Квартира")
+								input(type="submit" value="Добавить адрес").btn.add
+					hr
+				.col-xs-12
+					.profile__personal__block
+						h3 Платежные реквизиты
+						span Номер карты / Срок действия 
+						.profile__personal__block__form
+							input#card(type="text" value="**** **** **** 4000" disabled) 
+							input#data(type="text" value="01/22 " disabled)
+							a.delete(href="#")
+								img(src="img/delete.svg", alt="")
+						a.btn.new(href="#") Привязать новую
+					hr
+				.col-xs-12
+					.profile__personal__block
+						h3 Пароль
+						.profile__personal__block__pass(style="display: none")
+							label(for="pass1") Введите старый пароль 
+							input#pass1(type="password")
+							label(for="pass2") Введите новый пароль 
+							input#pass2(type="password")
+							label(for="pass3") Подтверждение пароля 
+							input#pass3(type="password")
+						a.btn.new.change-pass(href="#") Изменить пароль
+		.profile__personal__save
+			a(href="#") Сохранить изменения

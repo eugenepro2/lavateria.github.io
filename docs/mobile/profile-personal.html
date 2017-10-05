@@ -1,0 +1,82 @@
+
+<div class="page profile profile__personal" data-page="profile-personal">
+  <div class="page-content">
+    <div class="breadcrumb">
+      <h2>Персональные данные</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="profile__personal__block">
+            <h3>Личная информация</h3>
+            <input type="text" value="Иван" placeholder="Имя*"/>
+            <input type="text" placeholder="Фамилия"/>
+            <input id="tel" type="tel" placeholder="Номер телефона*"/>
+            <input type="email" value="info@mail.ru" placeholder="E-mail"/>
+            <p class="required">*Обязательное поле для заполнения</p>
+          </div>
+          <hr/>
+        </div>
+        <div class="col-xs-12">
+          <div class="profile__personal__block">
+            <h3>Адреса</h3>
+            <div class="profile__personal__block__adress">
+              <div class="profile__personal__block__adress__block">
+                <p>г. Санкт-Петербург, ул. Маршала Рокоссовского, д. 11, кв. 11</p><a class="delete" href="#"><img src="img/delete.svg" alt=""/></a>
+              </div>
+              <div class="profile__personal__block__adress__add">
+                <div style="display: none;">
+                  <label>Город*</label>
+                  <input type="text" value="Санкт-Петербург"/>
+                  <label>Адрес*</label>
+                  <input type="text" value="ул. Маршала Рокоссовского" placeholder="Улица"/>
+                  <input type="text" value="11" placeholder="Дом"/>
+                  <input type="text" placeholder="Корпус"/>
+                  <input type="text" value="11" placeholder="Квартира"/>
+                </div>
+                <input class="btn edit" type="submit" value="Редактировать"/>
+              </div>
+              <div class="profile__personal__block__adress__add">
+                <div style="display: none;">
+                  <label>Город*</label>
+                  <input type="text" placeholder="Город"/>
+                  <label>Адрес*</label>
+                  <input type="text" placeholder="Улица"/>
+                  <input type="text" placeholder="Дом"/>
+                  <input type="text" placeholder="Корпус"/>
+                  <input type="text" placeholder="Квартира"/>
+                </div>
+                <input class="btn add" type="submit" value="Добавить адрес"/>
+              </div>
+            </div>
+          </div>
+          <hr/>
+        </div>
+        <div class="col-xs-12">
+          <div class="profile__personal__block">
+            <h3>Платежные реквизиты</h3><span>Номер карты / Срок действия </span>
+            <div class="profile__personal__block__form">
+              <input id="card" type="text" value="**** **** **** 4000" disabled="disabled"/>
+              <input id="data" type="text" value="01/22 " disabled="disabled"/><a class="delete" href="#"><img src="img/delete.svg" alt=""/></a>
+            </div><a class="btn new" href="#">Привязать новую</a>
+          </div>
+          <hr/>
+        </div>
+        <div class="col-xs-12">
+          <div class="profile__personal__block">
+            <h3>Пароль</h3>
+            <div class="profile__personal__block__pass" style="display: none;">
+              <label for="pass1">Введите старый пароль </label>
+              <input id="pass1" type="password"/>
+              <label for="pass2">Введите новый пароль </label>
+              <input id="pass2" type="password"/>
+              <label for="pass3">Подтверждение пароля </label>
+              <input id="pass3" type="password"/>
+            </div><a class="btn new change-pass" href="#">Изменить пароль</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="profile__personal__save"><a href="#">Сохранить изменения</a></div>
+  </div>
+</div>

@@ -1,0 +1,174 @@
+@import "../import/color.sass" 
+
+.icon-ruble
+	position: relative
+	top: 1px
+
+.more
+	font-size: 30px
+	text-decoration: underline
+	margin-bottom: 30px
+	display: block
+	color: $blue
+	p
+		color: $black-two
+		text-decoration: none
+		margin-bottom: 30px
+
+.actions-modal
+	width: 100%
+	margin-left: -50%
+	&-button
+		font-size: 30px
+		padding: 20px
+		height: 100%
+.actions-modal-label
+	font-size: 20px
+
+.modal
+	width: 500px
+	margin-left: -250px
+	&-inner
+		background: #fff
+	&-title
+		display: none
+	&-text
+		font-size: 30px
+	&-buttons
+		height: 100%
+	&-button
+		padding: 15px
+		background: #fff
+		height: 100%
+		font-size: 30px
+
+.container
+	padding: 0 40px
+	height: initial
+
+body.mobile
+	padding-top: 0px
+
+input, textarea, select
+	background-clip: padding-box
+	appearance: none
+
+#loading
+	z-index: 6000
+#loading #preloader
+	transform: scale(3.0)
+#Calque_1
+	left: -3px
+
+.navbar
+	height: 110px
+	z-index: 1000
+	&-inner
+		padding: 0
+.toolbar
+	height: 100px
+	&-inner
+		padding: 0
+.navbar-through .page-content
+	padding-top: 0
+.page
+	padding-top: 110px
+	background: $white
+.pages
+	background: transparent
+.page-on-left
+	transform: translate3d(-100%,0,0)
+
+
+
+.btn--checkout--ready
+	&:hover
+		i
+			color: $white
+
+p
+	font-size: 30px
+
+
+//Стилизация Ckeckbox
+.checkbox
+	&__block
+		width: 50px
+		height: 50px
+		border: 1px solid $warm-grey
+		border-radius: 5px
+	.label
+		width: 50px
+		height: 50px
+		left: 5px
+		top: 4px
+		&:after
+			width: 30px
+			height: 15px
+			top: 7px
+			left: 5px
+			border: 3px solid $blue
+			border-top: none
+			border-right: none
+			background: transparent
+	input[type=radio]
+		visibility: hidden
+		margin-left: -18px
+		&:checked + label:after
+			opacity: 1
+		&:checked + label + .label-for
+			color: $black-two
+	input[type=checkbox]
+		visibility: hidden
+		display: none
+		&:checked + label:after
+			opacity: 1
+		&:checked + label + .label-for
+			color: $black-two
+	label
+		font-size: 30px
+		color: $black-two
+		cursor: pointer
+	label.label-for
+		display: inline-block
+		color: $warm-grey
+		position: relative
+		top: -15px
+		margin-left: 20px
+		span
+			position: absolute
+			white-space: nowrap
+
+
+.tooltip
+	position: absolute
+	font-family: icomoon
+	border: 1px solid $grey
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	font-size: 23px
+	font-weight: 400
+	padding: 3px 13.5px
+	right: 7px
+	top: 10px
+	box-sizing: border-box
+	color: $grey
+	transition: all 0.5s
+	cursor: pointer
+	&:hover
+		color: $blue
+		border: 1px solid $blue
+	&:before
+		content: '\e900'
+.popover
+	p
+		font-size: 24px
+
+
+//Промежуточная страница
+.clothes-bags
+	background: $white !important
+	padding-top: 110px !important
+	p
+		margin-top: 0

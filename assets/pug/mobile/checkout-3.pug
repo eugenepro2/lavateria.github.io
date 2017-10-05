@@ -1,0 +1,118 @@
+.page(data-page='checkout').checkout
+	.page-content
+		.container
+			.col-xs-12
+				.checkout__step.checkout__step--1.hidden
+					.checkout__item.checkout__item--1.active.top-xs.flex#step-1
+						span 1
+						h3 Состав заказа
+						img(src="img/checkout-arrow-small.svg", alt="")
+					.row.checkout__step__block
+						.col-xs-12
+							h2 Абонемент по количеству корзин
+						.col-xs-12
+							.subscriptions-inside__block
+									h3 Сколько вещей необходимо<br>стирать каждый месяц?
+									.item-input.item-input--green.active
+										select
+											option 2 корзины
+											option 4 корзины
+										img.svg(src="img/checkout-arrow-small-sub.svg", alt="")
+									hr
+							.subscriptions-inside__block
+								h3 На сколько месяцев Вы хотите<br>приобрести абонемент?  
+								.item-input.item-input--green.active
+									select
+										option 1 месяц
+										option 2 месяца
+									img.svg(src="img/checkout-arrow-small-sub.svg", alt="")
+							.mobile-calc__sum.mobile-calc__sum--inside
+								.container
+									.row
+										.col-xs-5
+											a.save.external(href="#step-2") Сохранить
+										.col-xs-7.end-xs.total
+												h3 Итого:
+												span 4500
+												i.icon-ruble
+					hr
+				.checkout__step.checkout__step--2#step-2
+					.checkout__item.checkout__item--2.top-xs.flex
+						span 2
+						h3 Адрес и дата приезда<br>курьера
+						img.svg(src="img/checkout-arrow-small.svg", alt="")
+					.row.checkout__step__block
+						.col-xs-12
+							label(for="adress") Адрес
+							input#adress(type="text" placeholder="Улица, дом/корпус, строение, кв.")
+						.col-xs-12
+							label(for="date") Введите дату забора 
+							input#date(type="date" placeholder="Например: 15.05.2017" value="2014-04-30")
+						.col-xs-12
+							label(for="comment") Комментарий к заказу 
+							textarea#comment(placeholder="забрать у консьержа, позвонить в домофон...")
+						.col-xs-12
+							p Наш менеджер свяжется с Вами <br>и согласует удобное для Вас время <br>забора белья после оформления заказа. 
+							.mobile-calc__sum.mobile-calc__sum--inside
+								.container
+									.row
+										.col-xs-12.center-xs
+											a.next.external(href="#step-3") Далее
+					hr
+				.checkout__step.checkout__step--3.hidden#step-3
+					.checkout__item.checkout__item--3.top-xs.flex
+						span 3
+						h3 Введите контактную<br>информацию
+						img.svg(src="img/checkout-arrow-small.svg", alt="")
+					a.checkout__item__account.save(href="#") У меня уже есть аккаунт
+					.row.checkout__step__block
+						.col-xs-12
+							input#name(type="text" required placeholder="Имя*")
+							input#tel(type="text" required placeholder="Телефон*")
+							input(type="text" placeholder="Фамилия")
+							input(type="text" placeholder="E-mail")
+							p.required *Обязательное поле для заполнения
+						.col-xs-12
+							.mobile-calc__sum.mobile-calc__sum--inside
+								.container
+									.row
+										.col-xs-12.center-xs
+											a.next.external(href="#step-4") Далее
+					hr
+				.checkout__step.checkout__step--4.hidden#step-4
+					.checkout__item.checkout__item--4.top-xs.flex
+						span 4
+						div
+							h3 Выберите способ<br>оплаты
+						img.svg(src="img/checkout-arrow-small.svg", alt="")
+					.row.checkout__step__block
+						.col-xs-12
+							.checkout__step__payment
+								input#bank(type="radio" value="Банковской картой курьеру при получении" name="payment")
+								label(for="bank")
+									h3 Банковской картой курьеру при получении
+									p Оплатите покупку банковской картой при получении. Оплата осуществляется через мобильный терминал PayMe, без комиссии.
+							.checkout__step__payment
+								input#cash(type="radio" value="Банковской картой курьеру при получении" name="payment")
+								label(for="cash")
+									h3 Наличными курьеру<br>при получении
+							.checkout__step__payment
+								input#online(type="radio" value="Банковской картой курьеру при получении" name="payment")
+								label(for="online")
+									h3 Онлайн оплата банковской<br>картой на сайте
+									img(src="../img/mastercard.svg", alt="")
+									img(src="../img/visa.svg", alt="")
+						.col-xs-12
+							.checkbox
+								.checkbox__block
+								input#rules(type="checkbox" checked name="rul")
+								label.label(for="rules")
+								label.label-for(for="rules") Я прочитал и согласен 
+									a(href="#") с условиями оформления и оплаты заказов
+									|  на сайте Lavateria
+		a(href="checkout-ready.html").checkout__sum (Итого: <span>1580</span><i class="icon-ruble"></i>) Оформить
+
+
+
+
+

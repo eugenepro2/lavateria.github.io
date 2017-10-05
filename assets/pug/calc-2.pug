@@ -1,0 +1,410 @@
+extends include/layout.pug
+
+block content
+	section.slider.slider--2
+		.swiper-container
+			.swiper-wrapper
+				.swiper-slide(style="background-image: url('img/slider/2.jpg')")
+					.container
+						.row
+							.col-xs-12
+								h1.wow.fadeIn Стираем, <br>
+									i.icon-slider-wave
+									| сушим, гладим,<br>доставляем!
+				.swiper-slide(style="background-image: url('img/slider/3.jpg')")
+					.container
+						.row
+							.col-xs-12
+								h1.wow.fadeIn Стираем, <br>
+									i.icon-slider-wave
+									| сушим, гладим,<br>доставляем!
+				.swiper-slide(style="background-image: url('img/slider/4.jpg')")
+					.container
+						.row
+							.col-xs-12
+								h1.wow.fadeIn Стираем, <br>
+									i.icon-slider-wave
+									| сушим, гладим,<br>доставляем!
+			.swiper-pagination
+		.container
+			.offer.offer--2
+				.row
+					.col-xs-12
+						.offer__block.wow.fadeIn#offer
+							.row
+								.col-xs-12.offer__block__row(data-price="1000")
+									.row.middle-xs
+										.col-sm-5
+											h3 Летняя обувь 
+												.tooltip
+													.tooltip__hover i am tooltip
+											span Чистка
+										.col-sm-2
+											.offer__cart__sum.cart__sum.cart__sum--1
+												h3 1000
+													span 0
+													i.icon-ruble
+										.col-sm-5
+											.flex.between-xs.middle-xs.offer__block__calc.calc
+												.add(data-action="substract")
+													span
+													i -
+												input(type="number" data-action="keyup" data-price="1000" value="0" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0")
+												a(href="#offer").add(data-action="add")
+													span
+													i +
+								.col-xs-12.offer__block__row(data-price="700")
+									.row.middle-xs
+										.col-sm-5
+											h3 Летняя обувь
+												.tooltip
+													.tooltip__hover i am tooltip i am tooltipi am tooltipi am tooltip
+											span Чистка + покраска 
+										.col-sm-2
+											.offer__cart__sum.cart__sum.cart__sum--2
+												h3 700
+													span 0
+													i.icon-ruble
+										.col-sm-5
+											.flex.between-xs.middle-xs.offer__block__calc.calc
+												.add(data-action="substract")
+													span
+													i -
+												input(type="number" data-action="keyup" data-price="700" value="0" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0")
+												a(href="#offer").add(data-action="add")
+													span
+													i +
+								.col-xs-12.offer__block__row(data-price="800")
+									.row.middle-xs
+										.col-sm-5
+											h3 Зимняя обувь 
+												.tooltip
+													.tooltip__hover i am tooltip i am tooltipi am tooltipi am tooltip
+											span Чистка
+										.col-sm-2
+											.offer__cart__sum.cart__sum.cart__sum--3
+												h3 800
+													span 0
+													i.icon-ruble
+										.col-sm-5
+											.flex.between-xs.middle-xs.offer__block__calc.calc
+												.add(data-action="substract")
+													span
+													i -
+												input(type="number" data-action="keyup" data-price="800" value="0" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0")
+												a(href="#offer").add(data-action="add")
+													span
+													i +
+								.col-xs-12.offer__block__row(data-price="900")
+									.row.middle-xs
+										.col-sm-5
+											h3 Зимняя обувь 
+												.tooltip
+													.tooltip__hover i am tooltip i am tooltipi am tooltipi am tooltip
+											span Чистка + покраска
+										.col-sm-2
+											.offer__cart__sum.cart__sum.cart__sum--4
+												h3 900
+													span 0
+													i.icon-ruble
+										.col-sm-5
+											.flex.between-xs.middle-xs.offer__block__calc.calc
+												.add(data-action="substract")
+													span
+													i -
+												input(type="number" data-action="keyup" data-price="900" value="0" min="0" max="99" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" placeholder="0")
+												a(href="#offer").add(data-action="add")
+													span
+													i +
+								.col-xs-12.offer__block__delivery#cart-delivery
+									.row
+										.col-sm-4
+											h4 Доставка:
+										.col-sm-8.end-xs
+											.offer__block__delivery__price 
+												h3#cart-delivery-sum 300
+												i.icon-ruble
+												span / 
+												h4#cart-delivery-sum-free от <span>6000</span> руб.- бесплатно
+										.col-sm-6.offer__block__delivery__checkbox
+											.checkbox
+												.checkbox__block
+												input#checkbox-delivery-1(type="radio" name="delivery" data-delivery-price="300" data-delivery-price-free="2000")
+												label.label(for="checkbox-delivery-1")
+												label.label-for(for="checkbox-delivery-1") В пределах КАД
+										.col-sm-6.offer__block__delivery__checkbox
+											.checkbox
+												.checkbox__block
+												input#checkbox-delivery-2(type="radio" name="delivery" data-delivery-price="500" data-delivery-price-free="3000")
+												label.label(for="checkbox-delivery-2")
+												label.label-for(for="checkbox-delivery-2") До 30 км от КАД
+										.col-sm-12.offer__block__delivery__checkbox
+											.checkbox
+												.checkbox__block
+												input#checkbox-delivery-3(type="radio" name="delivery" data-delivery-price="0" data-delivery-price-free="0")
+												label.label(for="checkbox-delivery-3")
+												label.label-for(for="checkbox-delivery-3") Самовывоз: ул. Рентгена, д. 9 литера Б
+								.col-xs-12
+									hr
+									.row.middle-xs.center-xs
+										.col-sm-5
+											.offer__block__total.total Итого:<br>
+												span 0
+												i.icon-ruble
+										.col-sm-7
+											a.btn.btn--slider(href="checkout.html")
+												i Заказать
+
+
+	section.services
+		.container
+			.row
+				.col-xs-12
+					.heading.wow.fadeInDown(data-wow-delay="0.3s")
+						h2 Наши услуги
+						i.icon-wave-heading
+				.col-sm-6.end-sm.wow.fadeIn(data-wow-delay="0.3s")
+					a.services__block.flex.bottom-xs.center-xs(style="background-image: url('img/services/1.png')" href="#")
+						.services__block__block
+							h3 Стирка<br>одежды с глажкой
+							.btn.btn--services
+								i Подробнее
+							.services__block__hover
+				.col-sm-6.wow.fadeIn(data-wow-delay="0.4s")
+					a.services__block.flex.top-xs.center-xs(style="background-image: url('img/services/2.png')" href="#")
+						.services__block__block
+							h3 Стирка<br>одеял, подушек, пледов
+							.btn.btn--services
+								i Подробнее
+							.services__block__hover
+				.col-sm-6.end-sm.wow.fadeIn(data-wow-delay="0.3s")
+					a.services__block.flex.bottom-xs.center-xs(style="background-image: url('img/services/3.png')" href="#")
+						.services__block__block
+							h3 Аквачистка<br>курток, пуховиков
+							.btn.btn--services
+								i Подробнее
+							.services__block__hover
+				.col-sm-6.wow.fadeIn(data-wow-delay="0.4s")
+					a.services__block.flex.top-xs.center-xs(style="background-image: url('img/services/4.png')" href="#")
+						.services__block__block
+							h3 Профессиональная<br>чистка обуви
+							.btn.btn--services
+								i Подробнее
+							.services__block__hover
+	section.how-it-works
+		.container
+			.row
+				.col-xs-12
+					.heading.wow.fadeInDown(data-wow-delay="0.3s")
+						h2 Как это работает?
+						span 4 простых шага
+						i.icon-wave-heading
+			.row.center-xs
+				.col-sm-3.wow.fadeInDown(data-wow-delay="0.3s")
+					.how-it-works__block.middle-xs
+						.how-it-works__block__icon.flex.center-xs
+							img(src="img/how-it-works/1.svg", alt="")
+						h3 Вы размещаете<br>заказ
+						p Используя наш сайт<br>или по телефону
+				.col-sm-3.wow.fadeInDown(data-wow-delay="0.4s")
+					.how-it-works__block.middle-xs
+						.how-it-works__block__icon.flex.center-xs.second
+							img(src="img/how-it-works/2.svg", alt="")
+						h3 Курьер забирает<br>вещи 
+						p От вашего порога и<br>в удобное для Вас время
+				.col-sm-3.wow.fadeInDown(data-wow-delay="0.5s")
+					.how-it-works__block.middle-xs
+						.how-it-works__block__icon.flex.center-xs
+							img(src="img/how-it-works/3.svg", alt="")
+						h3 Стираем, сушим,<br>гладим
+						p Используем гипоаллергенные <br>чистящие средства <br>и профессиональное <br>оборудование Electrolux
+				.col-sm-3.wow.fadeInDown(data-wow-delay="0.6s")
+					.how-it-works__block.middle-xs
+						.how-it-works__block__icon.flex.center-xs.fourth
+							img(src="img/how-it-works/4.svg", alt="")
+						h3 Курьер возвращает<br>вещи
+						p В течении 48 часов<br>в удобное для Вас<br>место и время
+	section.review
+		.review__img.review__img--1
+		.review__img.review__img--2
+		.container
+			.row
+				.col-xs-12
+					.heading.wow.fadeInDown(data-wow-delay="0.3s")
+						h2 Ваши<br>отзывы
+				.col-xs-12.review__block.wow.fadeIn(data-wow-delay="0.3s")
+					.row
+						.col-sm-3
+							h2.review__block__name Иван Иванов
+							span.review__block__date 12.01.2017
+						.col-sm-9
+							.review__block__right
+								h3.review__block__title Очень быстрая доставка
+								.review__block__star
+									i.icon-star
+									i.icon-star
+									i.icon-star
+									i.icon-star
+									i.icon-star
+									p Оценка <span class="star-count">5</span> из 5
+								p.review__block__text Я заказал стирку, решил посмотреть как работают, очень волновался, что плохо постирают или доставят не вовремя. Но был очень удивлен, когда мне позвонил курьер и поинтересовался в какое время мне было бы удобно получить свое чистое белье. В общем доставили вовремя, все чистое, выглаженное, теперь буду постоянно пользоваться, чтобы не тратить свое время! Всем советую!
+								p.review__block__comment
+									span Комментарий Lavateria: 
+									| Большое спасибо! Я заказал стирку, решил посмотреть как работают, очень волновался, что плохо постирают или доставят не вовремя.
+						.col-xs-12
+							hr
+				.col-xs-12.review__block.wow.fadeIn(data-wow-delay="0.3s")
+					.row
+						.col-sm-3
+							h2.review__block__name Иван Иванов
+							span.review__block__date 12.01.2017
+						.col-sm-9
+							.review__block__right
+								h3.review__block__title Хороший сервис
+								.review__block__star
+									i.icon-star
+									i.icon-star
+									i.icon-star
+									i.icon-star
+									i.icon-star
+									p Оценка <span class="star-count">5</span> из 5
+								p.review__block__text Я заказал стирку, решил посмотреть как работают, очень волновался, что плохо постирают или доставят не вовремя. Но был очень удивлен, когда мне позвонил курьер и поинтересовался в какое время мне было бы удобно получить свое чистое белье. 
+								p.review__block__comment
+									span Комментарий Lavateria: 
+									| Спасибо
+						.col-xs-12
+							hr
+				.col-xs-12.review__block.wow.fadeIn(data-wow-delay="0.3s")
+					.row
+						.col-sm-3
+							h2.review__block__name Иван Иванов
+							span.review__block__date 12.01.2017
+						.col-sm-9
+							.review__block__right
+								h3.review__block__title Не понравилось!
+								.review__block__star
+									i.icon-star
+									i.icon-star
+									p Оценка <span class="star-count">5</span> из 5
+								p.review__block__text Я заказал стирку, решил посмотреть как работают, очень волновался, что плохо постирают или доставят не вовремя. Но был очень удивлен, когда мне позвонил курьер и поинтересовался в какое время мне было бы удобно получить свое чистое белье. 
+							.review__block__photo
+								.review__block__photo
+						.col-xs-12
+							hr
+				.col-sm-6.end-sm
+					.flex.end-sm
+						a.btn.btn--review.wow.fadeIn(data-wow-delay="0.3s" href="#") 
+							i Оставить отзыв
+				.col-sm-6
+					a.btn.btn--review.btn--review--2.wow.fadeIn(data-wow-delay="0.3s" href="#") 
+						i Больше отзывов
+	section.faq
+		.container
+			.row
+				.col-xs-12
+					.heading
+						h2 Частые вопросы
+			.row
+				.col-sm-6.col-xs-12
+					.faq__block__heading.wow.fadeIn(data-wow-delay="0.3s")
+						h2 Стирка
+						i.icon-wave-heading-2
+					.faq__block.wow.fadeIn(data-wow-delay="0.3s")
+						p.faq__block__title Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!
+						.faq__block__answer(style="display: none")
+							p Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!
+							p Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.
+						a.btn.btn--faq
+							i Ответ
+						 
+					.faq__block.wow.fadeIn(data-wow-delay="0.3s")
+						p.faq__block__title Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!
+						.faq__block__answer(style="display: none")
+							p Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!
+							p Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.
+						a.btn.btn--faq
+							i Ответ
+						 
+					.faq__block__heading.wow.fadeIn(data-wow-delay="0.3s")
+						h2 Заказ и оплата
+						i.icon-wave-heading-2
+					.faq__block.wow.fadeIn(data-wow-delay="0.3s")
+						p.faq__block__title Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!
+						.faq__block__answer(style="display: none")
+							p Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!
+							p Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.
+						a.btn.btn--faq
+							i Ответ
+						 
+					.faq__block.wow.fadeIn(data-wow-delay="0.3s")
+						p.faq__block__title Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!
+						.faq__block__answer(style="display: none")
+							p Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!
+							p Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.
+						a.btn.btn--faq
+							i Ответ
+						 
+					.faq__block.wow.fadeIn(data-wow-delay="0.3s")
+						p.faq__block__title Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!
+						.faq__block__answer(style="display: none")
+							p Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!
+							p Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.
+						a.btn.btn--faq
+							i Ответ
+						 
+				.col-sm-6.col-xs-12
+					.faq__block__heading.wow.fadeIn(data-wow-delay="0.3s")
+						h2 Личный кабинет
+						i.icon-wave-heading-2
+					.faq__block.wow.fadeIn(data-wow-delay="0.3s")
+						p.faq__block__title Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!
+						.faq__block__answer(style="display: none")
+							p Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!
+							p Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.
+						a.btn.btn--faq
+							i Ответ
+						 
+					.faq__block.wow.fadeIn(data-wow-delay="0.3s")
+						p.faq__block__title Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!
+						.faq__block__answer(style="display: none")
+							p Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!
+							p Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.
+						a.btn.btn--faq
+							i Ответ
+						 
+					.faq__block__heading.wow.fadeIn(data-wow-delay="0.3s")
+						h2 Приемка и доставка
+						i.icon-wave-heading-2
+					.faq__block.wow.fadeIn(data-wow-delay="0.3s")
+						p.faq__block__title Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!
+						.faq__block__answer(style="display: none")
+							p Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!
+							p Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.
+						a.btn.btn--faq
+							i Ответ
+						 
+					.faq__block.wow.fadeIn(data-wow-delay="0.3s")
+						p.faq__block__title Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!
+						.faq__block__answer(style="display: none")
+							p Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!
+							p Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.
+						a.btn.btn--faq
+							i Ответ
+						 
+					.faq__block.wow.fadeIn(data-wow-delay="0.3s")
+						p.faq__block__title Насколько тщательно вы следите за соблюдением правил гигиены? Я не хочу, чтобы мои вещи стирались вместе с чужими или смешивались с ними на любом из этапов!
+						.faq__block__answer(style="display: none")
+							p Чистота, гигиеничность и индивидуальный подход – наши приоритеты в работе!
+							p Мы разработали законы чистоты «Lavadora» и неукоснительно следуем им: Мы стираем, сушим и гладим вещи каждого клиента отдельно от вещей других клиентов. Мы используем специальные тканевые мешки для стирки и сушки вещей наших клиентов.
+						a.btn.btn--faq
+							i Ответ
+						 
+			.row
+				.col-sm-6.end-sm
+					.flex.end-sm
+						a.btn.btn--faq--bottom.wow.fadeIn(data-wow-delay="0.3s" href="#")
+							i Задать вопрос
+				.col-sm-6
+					a.btn.btn--faq--bottom--2.wow.fadeIn(data-wow-delay="0.4s" href="#")
+						i Перейти в раздел
+

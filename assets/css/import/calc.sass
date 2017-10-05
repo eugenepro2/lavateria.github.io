@@ -1,0 +1,300 @@
+@import "color.sass" 
+
+
+.offer
+	.active
+		.offer__cart__count, .offer__cart__sum h3, .offer__cart__sum__span, input
+			color: $black-two
+	position: relative
+	.row
+		height: auto
+	&__block
+		&:before
+			position: absolute
+			background: url('/img/wave-calculator.png') no-repeat
+			content: ''
+			width: 100%
+			background-size: 100%
+			height: 100%
+			top: -11px
+			opacity: 0.93
+			left: 0px
+		background: rgba(255, 255, 255, 0.93)
+		position: absolute
+		box-sizing: border-box
+		bottom: 0
+		width: 404px
+		padding: 18px 41px
+		z-index: 10
+		height: 400px
+		&__row
+			margin-bottom: 23px
+		h2
+			font-size: 18px
+			font-weight: 600
+			color: $black-two
+			margin-bottom: 35px
+		h3
+			font-size: 16px
+			line-height: 1
+			color: $black-two
+			margin-bottom: 3px
+			position: relative
+		span
+			font-size: 10px
+			color: $warm-grey
+		.tooltip
+			position: absolute
+			font-family: icomoon
+			border: 1px solid $pinkish-grey-two
+			width: 14px
+			height: 14px
+			border-radius: 50%
+			font-size: 7px
+			padding: 2px 4.5px
+			right: 7px
+			top: 0
+			box-sizing: border-box
+			color: $pinkish-grey-two
+			transition: all 0.5s
+			cursor: pointer
+			&:hover
+				color: $blue
+				border: 1px solid $blue
+			&:hover .tooltip__hover
+				color: $grey-two
+				opacity: 1
+				visibility: visible
+			&:before
+				content: '\e900'
+			&__hover
+				transition: all 0.5s
+				display: block
+				position: absolute
+				padding: 10px 20px
+				background: $white
+				box-shadow: 0.3px 3px 24px 0 rgba(153, 153, 153, 0.29)
+				width: 130px
+				z-index: 15
+				top: 50%
+				transform: translateY(-50%)
+				left: 25px
+				font-family: "Segoe Ui"
+				font-size: 12px
+				opacity: 0
+				visibility: hidden
+				&:before
+					content: ''
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 5px 10px 5px 0px
+					border-color: transparent #ffffff transparent transparent
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					left: -10px
+		&__calc
+			position: relative
+			left: 14px
+			top: 2px
+		&__delivery
+			margin-top: 5px
+			margin-bottom: 15px
+			h4
+				font-size: 16px
+				color: $warm-grey
+				margin-bottom: 15px
+			.label-for
+				font-size: 16px
+				position: relative
+				top: -5px
+				left: 3px
+				color: $warm-grey
+				&--active
+					color: $black-two
+		&__free
+			font-size: 16px
+			color: $black-two
+			display: none
+			span
+				display: inline-block
+				color: $blue-two
+				font-size: 16px
+				padding-bottom: 1px
+	&__cart
+		display: none
+		background: rgba(255, 255, 255, 0.93)
+		position: absolute
+		box-sizing: border-box
+		bottom: 0
+		left: 424px
+		width: 300px
+		padding: 22px 42px
+		padding-right: 18px
+		z-index: 10
+		box-shadow: 0.3px 3px 68px 0 rgba(51, 153, 153, 0.15)
+		height: 400px
+		&__reset
+			background: #e8e8e8
+			width: 30px
+			height: 30px
+			border-radius: 50%
+			position: absolute
+			top: -18px
+			right: -11px
+			cursor: pointer
+			transition: background 0.3s
+			img
+				width: 14px
+				position: relative
+				top: 8px
+				left: 8px
+			&:hover
+				background: $white
+		&:before
+			position: absolute
+			background: url('/img/wave-cart.png') no-repeat
+			content: ''
+			width: 100%
+			background-size: 100%
+			height: 100%
+			top: -11px
+			left: 0px
+			opacity: 0.93
+		&__row
+			margin-bottom: 24px
+		h2
+			font-size: 18px
+			font-weight: 600
+			color: $blue
+			margin-bottom: 27px
+		&__count
+			font-size: 18px
+			font-weight: 600
+			text-align: center
+			display: inline-block
+			color: $grey
+			&__span
+				font-size: 11px
+				font-weight: normal
+				display: block
+				position: relative
+				top: 2px
+		&__onsum
+			font-size: 12px
+			position: relative
+			left: 13px
+			color: $warm-grey
+		&__sum
+			h3
+				font-size: 18px
+				font-weight: 600
+				line-height: 1.45
+				color: $grey
+				i
+					font-size: 13px
+					position: relative
+					left: 4px
+			&__span
+				font-size: 11px
+				position: relative
+				top: -3px
+				color: $grey
+		&__delivery
+			h2
+				font-size: 12px
+				color: $warm-grey
+				font-weight: normal
+				margin-bottom: 7px
+				margin-left: 5px
+			&__sum
+				position: relative
+				left: -2px
+				h3
+					position: relative
+					top: 3px
+					#cart-delivery-sum
+						font-size: 18px
+						font-weight: 600
+						line-height: 1.45
+					i
+						font-size: 13px
+						position: relative
+						left: 3px
+				span
+					font-size: 11px
+		hr
+			margin-top: 28px
+			border: none
+			border-top: 1px solid #dddddd
+			margin-bottom: 30px
+			margin-right: 24px
+		&__total
+			font-size: 18px
+			font-weight: 600
+			span
+				color: $blue-two
+			i
+				font-size: 13px
+				position: relative
+				left: 3px
+				color: $blue-two
+		&__btn
+			margin-left: 30px
+	&--2
+		hr
+			margin-top: 10px
+			border: none
+			border-top: 1px solid #dddddd
+			margin-bottom: 10px
+		.offer
+			&__block
+				height: 440px
+				&__total
+					font-size: 18px
+					font-weight: 600
+					span
+						color: $blue-two
+						font-size: 18px
+					i
+						color: $blue-two
+						font-size: 14px
+						padding-left: 5px
+				&__delivery
+					margin-bottom: 0
+					&__price
+						h3
+							font-size: 18px
+							font-weight: 600
+							color: $black-two
+							display: inline-block
+						.icon-ruble
+							font-size: 13px
+							padding-left: 5px
+							padding-right: 3px
+						span
+							color: $black-two
+						h4
+							font-size: 11px
+							color: $grey-two
+							display: inline-block
+							span
+								color: $grey-two
+				.tooltip
+					right: 0
+				&__row.active
+					.offer__cart h3
+						color: #000
+			&__cart
+				&__sum
+					h3
+						color: $grey
+						span
+							display: none
+	&--3
+		.offer__block
+			height: 360px
+
+
+
